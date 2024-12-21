@@ -1,0 +1,33 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+
+Table Receta {
+  id int [primary key, increment]
+  nombre string
+  instrucciones text
+  keto bool
+}
+
+Table Ingrediente {
+  id int [primary key, increment]
+  nombre string
+  calorias int
+  tipo int
+}
+
+Table Nutriente {
+  id int [primary key, increment]
+  nombre string
+  unit_of_measurement string
+}
+
+Table IngredienteNutriente {
+  ingrediente_id int [primary key]
+  nutriente_id int [primary key]
+  amount int
+}
+
+Ref: Receta.id > Ingrediente.id
+Ref: IngredienteNutriente.ingrediente_id > Ingrediente.id
+Ref: IngredienteNutriente.nutriente_id > Nutriente.id

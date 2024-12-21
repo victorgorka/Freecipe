@@ -1,0 +1,23 @@
+----------------------REACT-------------------
+npm create vite@latest clienteRecetas
+cd my-app
+npm install
+npm run dev
+
+---------------------SPRINGBOOT---------------
+
+https://start.spring.io/
+	-Spring Web
+	-Spring Data JPA
+	-H2 Database
+
+
+application.properties:
+
+	spring.datasource.url=jdbc:h2:mem:productosdb
+	spring.datasource.driverClassName=org.h2.Driver
+	spring.datasource.username=sa
+	spring.datasource.password=
+	spring.h2.console.enabled=true
+	spring.jpa.show-sql=true
+	spring.jpa.hibernate.ddl-auto=update
