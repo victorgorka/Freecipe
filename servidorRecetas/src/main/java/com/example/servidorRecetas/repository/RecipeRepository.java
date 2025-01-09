@@ -1,11 +1,12 @@
 package com.example.servidorRecetas.repository;
 
-import com.example.servidorRecetas.model.Receta;
+import com.example.servidorRecetas.model.Recipe;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-@Repository
-public interface RecetaRepository extends JpaRepository<Receta, Long> {
+import java.util.List;
 
-    // List<Receta> findByKetoTrue();
+@Repository
+public interface RecipeRepository extends JpaRepository<Recipe, Long> {
+
 }
