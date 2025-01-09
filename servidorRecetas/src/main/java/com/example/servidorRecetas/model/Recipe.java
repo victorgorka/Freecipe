@@ -2,7 +2,6 @@ package com.example.servidorRecetas.model;
 
 import jakarta.persistence.*;
 import java.util.List;
-import jakarta.persistence.*;
 import java.util.List;
 
 @Entity
@@ -13,10 +12,8 @@ public class Recipe {
 
     private String name;
 
-    @ElementCollection
-    @CollectionTable(name = "recipe_ingredients", joinColumns = @JoinColumn(name = "recipe_id"))
-    @Column(name = "ingredient")
-    private List<String> ingredients;
+    @OneToMany(mappedBy = "recipe", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Ingredient> ingredients;
 
     @ElementCollection
     @CollectionTable(name = "recipe_instructions", joinColumns = @JoinColumn(name = "recipe_id"))
@@ -45,7 +42,8 @@ public class Recipe {
     @Column(name = "meal_type")
     private List<String> mealType;
 
-    // Getters and setters (add them if needed)
+    // Getters and setters
+
 
     public int getId() {
         return id;
@@ -63,11 +61,11 @@ public class Recipe {
         this.name = name;
     }
 
-    public List<String> getIngredients() {
+    public List<Ingredient> getIngredients() {
         return ingredients;
     }
 
-    public void setIngredients(List<String> ingredients) {
+    public void setIngredients(List<Ingredient> ingredients) {
         this.ingredients = ingredients;
     }
 
