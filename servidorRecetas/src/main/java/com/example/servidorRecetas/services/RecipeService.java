@@ -34,36 +34,39 @@ public class RecipeService {
         // Get the recipes from the external API (blocking call for synchronous)
         RecipeResponse response = getRecipesFromApi().block();
 
-        // Iterate through each recipe and save it
+        // Iterate through each recipe and save the ingredients first
         for (Recipe recipe : response.getRecipes()) {
+
             // Ensure ingredients are not null and are initialized
             if (recipe.getIngredients() == null || recipe.getIngredients().isEmpty()) {
                 continue; // Skip if no valid ingredients are present
             }
-            // Save the recipe first
-            Recipe savedRecipe = recipeRepository.save(recipe);
 
-            // Iterate through each ingredient (now using Ingredient objects, not Strings)
+            // First, make sure ingredients are saved and linked
+            List<Ingredient> savedIngredients = new ArrayList<>();
+
             for (Ingredient ingredient : recipe.getIngredients()) {
 
-
-                // Save the ingredient to the database
+                // Check if the ingredient already exists in the database by name
                 Optional<Ingredient> existingIngredientOpt = ingredientRepository.findByName(ingredient.getName());
-                if(existingIngredientOpt.isPresent()){
-                    ingredient = existingIngredientOpt.get();
-                }else{
-                    ingredientRepository.save(ingredient);
+                if (existingIngredientOpt.isPresent()) {
+                    // If the ingredient already exists, get it from the database
+                    savedIngredients.add(existingIngredientOpt.get());
+                } else {
+                    // If the ingredient does not exist, save it
+                    Ingredient savedIngredient = ingredientRepository.save(ingredient);
+                    savedIngredients.add(savedIngredient);
                 }
-
             }
 
-            // Optional: If you need to associate the ingredients with the recipe after saving them
-            savedRecipe.setIngredients(recipe.getIngredients());
+            // Now, associate the saved ingredients with the recipe
+            recipe.setIngredients(savedIngredients);
 
-            // Save the recipe again if it was modified (e.g., now linked with ingredients)
-            recipeRepository.save(savedRecipe);
+            // Save the recipe (with its associated ingredients) to the database
+            recipeRepository.save(recipe);
         }
     }
+
 
 
     // Get recipes from the external API
