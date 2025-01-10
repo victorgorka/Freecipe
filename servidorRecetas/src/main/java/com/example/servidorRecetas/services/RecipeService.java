@@ -1,13 +1,19 @@
 package com.example.servidorRecetas.services;
 
 import com.example.servidorRecetas.RecipeResponse;
+import com.example.servidorRecetas.model.Ingredient;
+import com.example.servidorRecetas.model.Recipe;
 import com.example.servidorRecetas.repository.IngredientRepository;
 import com.example.servidorRecetas.repository.RecipeRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 import reactor.core.publisher.Flux;
+
+import java.util.*;
+
 @Service
 public class RecipeService {
 
@@ -23,24 +29,33 @@ public class RecipeService {
     }
 
     // Fetch recipes from the external API and save them
-    public Mono<Void> fetchAndStoreRecipes() {
-        return getRecipesFromApi()
-                .flatMap(response -> {
-                    // Save each recipe in the database
-                    return Mono.just(response.getRecipes())
-                            .flatMapMany(Flux::fromIterable)  // Convert List<Recipe> to Flux<Recipe>
-                            .flatMap(recipe -> {
-                                // Save the recipe in the database
-                                return Mono.fromCallable(() -> recipeRepository.save(recipe))
-                                        .doOnSuccess(savedRecipe -> {
-                                            // Save ingredients for the saved recipe
-                                            savedRecipe.getIngredients().forEach(ingredient -> ingredient.setRecipe(savedRecipe));
-                                            ingredientRepository.saveAll(savedRecipe.getIngredients());
-                                        });
-                            })
-                            .then(); // This will return a Mono<Void> once all recipes are saved
-                });
+    @Transactional
+    public void fetchAndStoreRecipes() {
+        // Get the recipes from the external API (blocking call for synchronous)
+        RecipeResponse response = getRecipesFromApi().block();
+
+        // Iterate through each recipe and save it
+        for (Recipe recipe : response.getRecipes()) {
+            // Save the recipe first
+            Recipe savedRecipe = recipeRepository.save(recipe);
+
+            // Iterate through each ingredient (now using Ingredient objects, not Strings)
+            for (Ingredient ingredient : recipe.getIngredients()) {
+                // Set the recipe reference for the ingredient
+                ingredient.setRecipe(savedRecipe); // Link ingredient to the saved recipe
+
+                // Save the ingredient to the database
+                ingredientRepository.save(ingredient);
+            }
+
+            // Optional: If you need to associate the ingredients with the recipe after saving them
+            savedRecipe.setIngredients(recipe.getIngredients());
+
+            // Save the recipe again if it was modified (e.g., now linked with ingredients)
+            recipeRepository.save(savedRecipe);
+        }
     }
+
 
     // Get recipes from the external API
     private Mono<RecipeResponse> getRecipesFromApi() {
