@@ -36,16 +36,25 @@ public class RecipeService {
 
         // Iterate through each recipe and save it
         for (Recipe recipe : response.getRecipes()) {
+            // Ensure ingredients are not null and are initialized
+            if (recipe.getIngredients() == null || recipe.getIngredients().isEmpty()) {
+                continue; // Skip if no valid ingredients are present
+            }
             // Save the recipe first
             Recipe savedRecipe = recipeRepository.save(recipe);
 
             // Iterate through each ingredient (now using Ingredient objects, not Strings)
             for (Ingredient ingredient : recipe.getIngredients()) {
-                // Set the recipe reference for the ingredient
-                ingredient.setRecipe(savedRecipe); // Link ingredient to the saved recipe
+
 
                 // Save the ingredient to the database
-                ingredientRepository.save(ingredient);
+                Optional<Ingredient> existingIngredientOpt = ingredientRepository.findByName(ingredient.getName());
+                if(existingIngredientOpt.isPresent()){
+                    ingredient = existingIngredientOpt.get();
+                }else{
+                    ingredientRepository.save(ingredient);
+                }
+
             }
 
             // Optional: If you need to associate the ingredients with the recipe after saving them
