@@ -1,0 +1,53 @@
+ .card {
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .text-container {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #bcaf75;
+    margin: 0;
+  }
+  
+  .calories {
+    font-size: 16px;
+    color: #bcaf75;
+    margin: 10px 0;
+  }
+  
+  .button {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px 0;
+    background-color: #bcaf75;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #a8975e;  
+  }
+  a:hover {
+    color: white;
+  }
+  

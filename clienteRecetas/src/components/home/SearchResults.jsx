@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./SearchResults.css";
+import CardComponent from "./Cards";
 
 function SearchResults() {
 	return (
@@ -8,10 +9,7 @@ function SearchResults() {
 			<Container>
 				<Row>
 					<Col>
-						<div className="search-results">
-							<h2>Resultados de la búsqueda</h2>
-							<p>Mostrar los resultados aquí</p>
-						</div>
+						<CardComponent></CardComponent>
 					</Col>
 				</Row>
 			</Container>
