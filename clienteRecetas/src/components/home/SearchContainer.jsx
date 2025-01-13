@@ -3,41 +3,76 @@ import { Container, Row, Col, Form } from "react-bootstrap";
 import "./SearchContainer.css";
 
 function SearchContainer() {
-	const [rangeValue, setRangeValue] = useState(0);
+  const [rangeValue, setRangeValue] = useState(0);
+  const [ingredient, setIngredient] = useState("");
+  const [ingredients, setIngredients] = useState([]);
 
-	const handleRangeChange = (event) => {
-		setRangeValue(event.target.value);
-	}
+  const handleRangeChange = (event) => {
+    setRangeValue(event.target.value);
+  };
 
-	return (
-		<div>
-			<Container>
-				<Row>
-					<Col className="search-container">
-						<div className="search-filter">
-							<form>
-								<div className="checkbox-container">
-									<input type="checkbox" id="vegan" name="vegan" value="vegan" />
-									<label htmlFor="vegan">Op. Vegana</label>
-								</div>
-								<div className="checkbox-container">
-									<input type="checkbox" id="celiaca" name="celiaca" value="celiaca" />
-									<label htmlFor="vegan">Op. Celiaca</label>
-								</div>
-								<div className="checkbox-container">
-									<input type="checkbox" id="sal" name="sal" value="sal" />
-									<label htmlFor="vegan">Op. Sin Sal</label>
-								</div>
-								<Form.Label>Tiempo: {rangeValue} minutos</Form.Label>
-      							<Form.Range max={120} value={rangeValue} onChange={handleRangeChange} />
-								<input type="text" placeholder="Ingredientes" />
-								<button type="submit">Buscar</button>
-							</form>
-						</div>
-					</Col>
-				</Row>
-			</Container>
-		</div>
+  const handleInputChange = (event) => {
+    setIngredient(event.target.value);
+  };
+
+  const handleAddIngredient = (event) => {
+    event.preventDefault();
+    if (ingredient.trim() !== "") {
+      setIngredients([...ingredients, ingredient]);
+      setIngredient("");
+    }
+  };
+
+  const handleRemoveIngredient = (index) => {
+    const newIngredients = ingredients.filter((_, i) => i !== index);
+    setIngredients(newIngredients);
+  };
+
+  return (
+    <div>
+      <Container>
+        <Row>
+          <Col className="search-container">
+            <div className="search-filter">
+              <form onSubmit={handleAddIngredient}>
+                <div className="checkbox-container">
+                  <input type="checkbox" id="vegan" name="vegan" value="vegan" />
+                  <label htmlFor="vegan">Op. Vegana</label>
+                </div>
+                <div className="checkbox-container">
+                  <input type="checkbox" id="celiaca" name="celiaca" value="celiaca" />
+                  <label htmlFor="celiaca">Op. Celiaca</label>
+                </div>
+                <div className="checkbox-container">
+                  <input type="checkbox" id="sal" name="sal" value="sal" />
+                  <label htmlFor="sal">Op. Sin Sal</label>
+                </div>
+                <Form.Label>Tiempo: {rangeValue} minutos</Form.Label>
+                <Form.Range max={120} value={rangeValue} onChange={handleRangeChange} />
+                <input
+                  type="text"
+                  placeholder="Ingredientes"
+                  value={ingredient}
+                  onChange={handleInputChange}
+                  className="custom-placeholder"
+                />
+                <button type="submit">Agregar Ingrediente</button>
+              </form>
+              <div className="submited-ingredients">
+                {ingredients.map((ing, index) => (
+                  <div key={index} className="ingredient-item">
+                    {ing}
+                    <button onClick={() => handleRemoveIngredient(index)}>x</button>
+                  </div>
+                ))}
+              </div>
+              <br />
+              <button type="submit">Recomendar</button>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 }
 

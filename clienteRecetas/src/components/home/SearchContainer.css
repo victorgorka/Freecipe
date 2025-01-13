@@ -5,7 +5,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: rgba(229, 207, 134, 0.5);
+	background-color: rgba(229, 207, 134, 0.9);
 }
 
 .search-filter {
@@ -43,14 +43,18 @@
 .search-filter input[type="text"] {
 	width: 100%;
 	padding: 10px;
+	margin-top: 10px;
 	margin-bottom: 10px;
 	border: 1px solid #ccc;
+	background-color: rgb(188, 175, 117);
+	color: white;
 	border-radius: 4px;
 }
 
 .search-filter button {
 	padding: 10px 20px;
-	background-color: #007bff;
+	background-color: rgb(188, 175, 117);
+	margin: 10px;
 	color: white;
 	border: none;
 	border-radius: 4px;
@@ -58,5 +62,5 @@
 }
 
 .search-container button:hover {
-	background-color: #0056b3;
+	background-color: rgb(188, 175, 117);
 }
