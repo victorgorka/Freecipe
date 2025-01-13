@@ -4,11 +4,12 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './components/Login';
+import Registro from './components/Registro';
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <Login />
+    <Registro />
   )
 }
 
