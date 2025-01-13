@@ -1,6 +1,6 @@
-import './Cards.css'; 
+import './RecipeCard.css'; 
 
-const CardComponent = () => {
+const RecipeCard = () => {
   return (
     <div className="card" style={{ width: '18rem' }}>
       <img src="https://via.placeholder.com/150" className="card-img-top" alt="..." />
@@ -16,5 +16,5 @@ const CardComponent = () => {
   );
 }
 
-export default CardComponent;
+export default RecipeCard;
 

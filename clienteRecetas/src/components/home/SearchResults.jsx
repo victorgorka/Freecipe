@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./SearchResults.css";
-import CardComponent from "./Cards";
+import RecipeCard from "./RecipeCard";
 
 function SearchResults() {
 	return (
@@ -9,7 +9,7 @@ function SearchResults() {
 			<Container>
 				<Row>
 					<Col>
-						<CardComponent></CardComponent>
+						<RecipeCard></RecipeCard>
 					</Col>
 				</Row>
 			</Container>
