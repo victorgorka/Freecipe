@@ -37,26 +37,25 @@ function SearchContainer() {
               <form onSubmit={handleAddIngredient}>
                 <div className="checkbox-container">
                   <input type="checkbox" id="vegan" name="vegan" value="vegan" />
-                  <label htmlFor="vegan">Op. Vegana</label>
+                  <label htmlFor="vegan">Op. <strong>Vegana</strong></label>
                 </div>
                 <div className="checkbox-container">
                   <input type="checkbox" id="celiaca" name="celiaca" value="celiaca" />
-                  <label htmlFor="celiaca">Op. Celiaca</label>
+                  <label htmlFor="celiaca">Op. <strong>Celiaca</strong></label>
                 </div>
                 <div className="checkbox-container">
                   <input type="checkbox" id="sal" name="sal" value="sal" />
-                  <label htmlFor="sal">Op. Sin Sal</label>
+                  <label htmlFor="sal">Op. <strong>Sin Sal</strong></label>
                 </div>
                 <Form.Label>Tiempo: {rangeValue} minutos</Form.Label>
                 <Form.Range max={120} value={rangeValue} onChange={handleRangeChange} />
                 <input
                   type="text"
-                  placeholder="Ingredientes"
+                  placeholder="Ingresar ingredientes"
                   value={ingredient}
                   onChange={handleInputChange}
                   className="custom-placeholder"
                 />
-                <button type="submit">Agregar Ingrediente</button>
               </form>
               <div className="submitted-ingredients">
                 {ingredients.map((ing, index) => (

@@ -26,6 +26,8 @@
 	width: 100%;
 	margin-bottom: 10px;
 	text-align: left;
+	accent-color: rgb(188, 175, 117);
+	color: rgb(188, 175, 117);
 }
 
 .checkbox-container label {
@@ -89,7 +91,6 @@
 }
 
 .ingredient-item button {
-  /*background-color: #dc3545;*/
   color: white;
   border: none;
   border-radius: 4px;
