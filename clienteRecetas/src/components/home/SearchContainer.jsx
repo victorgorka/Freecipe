@@ -58,7 +58,7 @@ function SearchContainer() {
                 />
                 <button type="submit">Agregar Ingrediente</button>
               </form>
-              <div className="submited-ingredients">
+              <div className="submitted-ingredients">
                 {ingredients.map((ing, index) => (
                   <div key={index} className="ingredient-item">
                     {ing}
