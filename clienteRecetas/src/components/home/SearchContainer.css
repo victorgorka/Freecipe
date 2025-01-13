@@ -1,10 +1,10 @@
 .search-container {
 	height: 80vh;
-	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-color: rgba(229, 207, 134, 0.5);
+	   
 }
 
 .search-filter {

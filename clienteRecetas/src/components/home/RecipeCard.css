@@ -1,14 +1,38 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+ .col{
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+  align-items: center;
+ }
+ .search-container.col{
+	position: fixed;
+}
+
+
  .card {
-    width: 300px;
+    width: 35%;
+    min-width: 200px;
+    margin-left: 5px;
+    margin-bottom: 5px;
     border-radius: 15px;
-    overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0;
     font-family: "Montserrat", sans-serif;
-  }
+    max-height: max-content;
+    white-space: nowrap;     /* Evita que el texto se ajuste en múltiples líneas */
+    overflow: hidden;        /* Oculta el contenido que se desborde del contenedor */
+    text-overflow: ellipsis; /* Añade "..." si el texto es demasiado largo */
+}
 
   .image {
-    width: 100%;
+    max-width: 100%;
     height: auto;
+
   }
   
   .text-container {
@@ -34,7 +58,7 @@
     display: block;
     width: 80%;
     margin: 20px auto;
-    padding: 10px 0;
+    padding: 10px;
     background-color: #bcaf75;
     color: white;
     text-align: center;
@@ -42,6 +66,7 @@
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none;
   }
   
   .button:hover {
