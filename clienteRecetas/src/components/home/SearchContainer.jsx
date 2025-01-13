@@ -1,14 +1,20 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Row, Col, Form } from "react-bootstrap";
 import "./SearchContainer.css";
 
 function SearchContainer() {
+	const [rangeValue, setRangeValue] = useState(0);
+
+	const handleRangeChange = (event) => {
+		setRangeValue(event.target.value);
+	}
+
 	return (
 		<div>
 			<Container>
 				<Row>
-					<Col>
-						<div className="search-container">
+					<Col className="search-container">
+						<div className="search-filter">
 							<form>
 								<div className="checkbox-container">
 									<input type="checkbox" id="vegan" name="vegan" value="vegan" />
@@ -22,7 +28,9 @@ function SearchContainer() {
 									<input type="checkbox" id="sal" name="sal" value="sal" />
 									<label htmlFor="vegan">Op. Sin Sal</label>
 								</div>
-								<input type="text" placeholder="Buscar ingredientes" />
+								<Form.Label>Tiempo: {rangeValue} minutos</Form.Label>
+      							<Form.Range max={120} value={rangeValue} onChange={handleRangeChange} />
+								<input type="text" placeholder="Ingredientes" />
 								<button type="submit">Buscar</button>
 							</form>
 						</div>
