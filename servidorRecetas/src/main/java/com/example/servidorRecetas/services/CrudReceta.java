@@ -23,6 +23,7 @@ public class CrudReceta {
     }
 
     public Recipe createRecipe(Recipe recipe) {
+
         return recipeRepository.save(recipe);
     }
 
