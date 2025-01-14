@@ -1,0 +1,18 @@
+.button2 {
+        width:80%;
+        border: 1px solid black; 
+        padding: 10px 20px;      
+        background-color: #f0f0f0; 
+        color: black;
+        border-radius: 15px;           
+        cursor: pointer;          
+      
+      }
+.button2:hover{
+    border: 1px solid #a8975e;
+    text-decoration: underline;
+}
+.row{
+  position: flex;
+  justify-content: space-evenly;
+}
