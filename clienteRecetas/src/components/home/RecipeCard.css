@@ -3,22 +3,20 @@
   margin: 0px;
 }
 
- .col{
-  display: flex;
-  width: 50%;
-  flex-wrap: wrap;
-  align-items: center;
- }
+
+
+ /*
  .search-container.col{
 	position: fixed;
 }
+  */
 
 
  .card {
     width: 35%;
     min-width: 200px;
-    margin-left: 5px;
-    margin-bottom: 5px;
+    height: 300px;
+    margin-bottom: 15px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 0;
@@ -33,6 +31,21 @@
     max-width: 100%;
     height: auto;
 
+  }
+  .Image-container { 
+    position: relative; /* Posiciona este contenedor de manera relativa */ 
+    width: 100%; 
+    height: 100%; 
+  }
+
+  .color{
+position: absolute; 
+top: 0; 
+left: 0; 
+width: 100%; 
+height: 100%; 
+background-color: #bcaf75; 
+opacity: 0.1; 
   }
   
   .text-container {

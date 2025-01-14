@@ -14,15 +14,15 @@ function SearchResults() {
 		<div>
 			<Container>
 				<Row>
-					<Col className="Col2">
+					
 						{[...Array(numCards).keys()].map(index => (
 							<RecipeCard key={index}></RecipeCard>
 						))}
-					</Col>
+					
 				</Row>
 				<Row>
-					{numCards < 20 &&
-					<button className="button2" onClick={getNext}>VER +</button>}
+						{numCards < 20 &&
+						<button className="button2" onClick={getNext}>VER +</button>}
 				</Row>
 			</Container>
 		</div>
