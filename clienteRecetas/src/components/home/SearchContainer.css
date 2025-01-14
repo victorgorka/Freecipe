@@ -1,6 +1,6 @@
 .search-container {
 	height: 80vh;
-	width: 50%;
+	width: 600px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -10,6 +10,7 @@
 
 .search-filter {
 	display: flex;
+	width: 500px;
 	flex-direction: column;
 	align-items: center;
 	padding: 20px;
