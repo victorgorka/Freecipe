@@ -72,7 +72,7 @@ public class RecipeService {
     // Get recipes from the external API
     private Mono<RecipeResponse> getRecipesFromApi() {
         return webClient.get()
-                .uri("/recipes") // This is the endpoint you want to call
+                .uri("/recipes?limit=0") // This is the endpoint you want to call
                 .retrieve()
                 .bodyToMono(RecipeResponse.class);  // Deserialize the response into RecipeResponse
     }
