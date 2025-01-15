@@ -4,16 +4,16 @@ import "./SearchContainer.css";
 
 function SearchContainer() {
   const [rangeValue, setRangeValue] = useState(0);
-  const [ingredientId, setIngredientId] = useState("");  // Store the selected ingredient's id
-  const [ingredients, setIngredients] = useState([]);  // List of added ingredients (by name)
-  const [availableIngredients, setAvailableIngredients] = useState([]);  // List of available ingredients from the server
+  const [ingredientId, setIngredientId] = useState(""); // Store the selected ingredient's id
+  const [ingredients, setIngredients] = useState([]); // List of added ingredients
+  const [availableIngredients, setAvailableIngredients] = useState([]); // List of available ingredients from the server
 
   // Fetch available ingredients from the server when the component mounts
   useEffect(() => {
     // Simulate an API call to fetch ingredients
     fetch("http://localhost:8080/ingredients")
       .then((response) => response.json())
-      .then((data) => setAvailableIngredients(data))  // Update the available ingredients
+      .then((data) => setAvailableIngredients(data)) // Update the available ingredients
       .catch((error) => console.error("Error fetching ingredients:", error));
   }, []);
 
@@ -22,17 +22,17 @@ function SearchContainer() {
   };
 
   const handleIngredientChange = (event) => {
-    setIngredientId(event.target.value);  // Set the selected ingredient id
+    setIngredientId(event.target.value); // Set the selected ingredient id
   };
 
   const handleAddIngredient = (event) => {
     event.preventDefault();
     if (ingredientId && availableIngredients.length > 0) {
       // Find the ingredient name based on the selected id
-      const selectedIngredient = availableIngredients.find(ing => ing.id.toString() === ingredientId);
+      const selectedIngredient = availableIngredients.find((ing) => ing.id.toString() === ingredientId);
       if (selectedIngredient) {
         setIngredients([...ingredients, selectedIngredient.name]);
-        setIngredientId("");  // Reset the selected ingredient
+        setIngredientId(""); // Reset the selected ingredient
       }
     }
   };
@@ -40,6 +40,28 @@ function SearchContainer() {
   const handleRemoveIngredient = (index) => {
     const newIngredients = ingredients.filter((_, i) => i !== index);
     setIngredients(newIngredients);
+  };
+
+  // Function to fetch recipes by ingredients
+  const fetchRecipesByIngredients = () => {
+    // Construct the query string with separate ingredients
+    const queryParams = ingredients
+      .map((ingredient) => `ingredients=${encodeURIComponent(ingredient)}`)
+      .join("&");
+
+    // Construct the URL for the API call
+    const url = `http://localhost:8080/recipes/byIngredients?${queryParams}`;
+
+    // Call the endpoint
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Recipes:", data);
+        // Handle the response data (e.g., update state with recipes)
+      })
+      .catch((error) => {
+        console.error("Error fetching recipes:", error);
+      });
   };
 
   return (
@@ -61,9 +83,9 @@ function SearchContainer() {
             </div>
             <Form.Label>Tiempo: {rangeValue} minutos</Form.Label>
             <Form.Range max={120} value={rangeValue} onChange={handleRangeChange} />
-            
+
             {/* Ingredient selection dropdown */}
-            <select 
+            <select
               value={ingredientId}
               onChange={handleIngredientChange}
               className="custom-placeholder"
@@ -77,7 +99,7 @@ function SearchContainer() {
             </select>
             <button type="submit" disabled={!ingredientId}>Añadir Ingrediente</button>
           </form>
-          
+
           <div className="submitted-ingredients">
             {ingredients.map((ing, index) => (
               <div key={index} className="ingredient-item">
@@ -86,9 +108,9 @@ function SearchContainer() {
               </div>
             ))}
           </div>
-          
+
           <br />
-          <button type="submit">Recomendar</button>
+          <button type="button" onClick={fetchRecipesByIngredients}>Recomendar</button>
         </div>
       </div>
     </div>
