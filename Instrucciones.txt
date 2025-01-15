@@ -21,3 +21,36 @@ application.properties:
 	spring.h2.console.enabled=true
 	spring.jpa.show-sql=true
 	spring.jpa.hibernate.ddl-auto=update
+
+
+http://localhost:8080/fetch-recipes ----> Hay que hacerlo cada vez que enciendas el servidor para cargar las recetas en h2
+http://localhost:8080/h2-console    ----> Para comprobar la base de datos
+http://localhost:8080/recipes       ----> CRUD para ver todas las recetas  || Con post y una receta en el body para crear receta
+
+{
+    "name": "Tomato Soup",
+    "ingredients": [
+        {
+            "id": 2,
+            "name": "Tomato sauce"
+        },
+        {
+            "id": 23,
+            "name": "Salt"
+        }
+    ],
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 30,
+    "servings": 4,
+    "difficulty": "Easy",
+    "cuisine": "Italian",
+    "caloriesPerServing": 150,
+    "instructions": ["Cut the tomatoes.", "Boil the tomatoes.", "Blend into a smooth soup."],
+    "tags": ["Vegetarian", "Soup"],
+    "mealType": ["Lunch"]
+}
+
+Para probar el post con postman por ejemplo
+
+
+http://localhost:8080/recipes/{1}   ----> CRUD para ver tareas por id
