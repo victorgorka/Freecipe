@@ -28,4 +28,15 @@ public interface RecipeRepository extends JpaRepository<Recipe, Long> {
             nativeQuery = true)
     List<Recipe> findRecipesByIngredients(@Param("ingredients") List<String> ingredients,
                                           @Param("ingredientsCount") long ingredientsCount);
+
+    @Query(value = "SELECT r.* " +
+            "FROM recipe r " +
+            "JOIN recipe_ingredient ri ON r.id = ri.recipe_id " +
+            "JOIN ingredient i ON ri.ingredient_id = i.id " +
+            "WHERE i.name IN :ingredients " +
+            "GROUP BY r.id " +
+            "HAVING COUNT(DISTINCT i.name) = :ingredientsCount",
+            nativeQuery = true)
+    List<Recipe> findRecipesByIngredientsFlexible(@Param("ingredients") List<String> ingredients,
+                                                  @Param("ingredientsCount") long ingredientsCount);
 }
