@@ -17,7 +17,7 @@ public interface RecipeRepository extends JpaRepository<Recipe, Long> {
             "JOIN ingredient i ON ri.ingredient_id = i.id " +
             "WHERE i.name IN :ingredients " +
             "GROUP BY r.id " +
-            "HAVING COUNT(DISTINCT i.name) = :ingredientsCount",
+            "HAVING COUNT(DISTINCT i.name) <= :ingredientsCount",
             nativeQuery = true)
     List<Recipe> findRecipesByIngredients(@Param("ingredients") List<String> ingredients,
                                           @Param("ingredientsCount") long ingredientsCount);
