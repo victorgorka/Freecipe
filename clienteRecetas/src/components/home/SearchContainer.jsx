@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Form } from "react-bootstrap";
 import "./SearchContainer.css";
+import { Link } from 'react-router-dom';
 
 function SearchContainer() {
   const [rangeValue, setRangeValue] = useState(0);
@@ -66,6 +67,7 @@ function SearchContainer() {
 
   return (
     <div>
+      <button><Link to="/">HOME</Link></button>
       <div className="search-container">
         <div className="search-filter">
           <form onSubmit={handleAddIngredient}>

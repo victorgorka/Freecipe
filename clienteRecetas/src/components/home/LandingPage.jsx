@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import landingImage from '../assets/Landing.jpg';
 import iconImage from '../assets/Web-02.png';
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
   return (
@@ -32,7 +33,7 @@ const LandingPage = () => {
       </main>
 
       <footer className="footer">
-        <button className="continue-btn">CONTINUAR</button>
+        <button className="continue-btn"><Link to="/search">CONTINUAR</Link></button>
       </footer>
     </div>
   );
