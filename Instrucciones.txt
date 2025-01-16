@@ -41,7 +41,7 @@ http://localhost:8080/recipes       ----> CRUD para ver todas las recetas  || Co
     ],
     "prepTimeMinutes": 10,
     "cookTimeMinutes": 30,
-    "servings": 4,
+    "servings": 4,s
     "difficulty": "Easy",
     "cuisine": "Italian",
     "caloriesPerServing": 150,
@@ -54,3 +54,9 @@ Para probar el post con postman por ejemplo
 
 
 http://localhost:8080/recipes/{1}   ----> CRUD para ver tareas por id
+
+https://raw.githubusercontent.com/victorgorka/Freecipe/refs/heads/main/Design/Web-02.png?token=GHSAT0AAAAAAC46BJTTY244B7WDJH2SLVJEZ4H5O2A
+https://raw.githubusercontent.com/victorgorka/Freecipe/refs/heads/main/Design/Landing.jpg?token=GHSAT0AAAAAAC46BJTTE32D6OLPAUBFL5PUZ4H5M5Q
+
+
+
