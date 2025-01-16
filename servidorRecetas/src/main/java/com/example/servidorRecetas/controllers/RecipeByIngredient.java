@@ -53,7 +53,7 @@ public class RecipeByIngredient {
     //############################## BUSQUEDA ##############################################
 
     @GetMapping("/byIngredients")
-    public List<Recipe> getRecipesByIngredients(List<String> ingredients, boolean flexible) {
+    public List<Recipe> getRecipesByIngredients(@RequestParam List<String> ingredients,@RequestParam boolean flexible) {
         long ingredientsCount = ingredients.size();
         if (flexible) {
             return recipeRepository.findRecipesByIngredientsFlexible(ingredients, ingredientsCount);

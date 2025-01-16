@@ -1,13 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { Form } from "react-bootstrap";
 import "./SearchContainer.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function SearchContainer() {
   const [rangeValue, setRangeValue] = useState(0);
   const [ingredientId, setIngredientId] = useState(""); // Store the selected ingredient's id
   const [ingredients, setIngredients] = useState([]); // List of added ingredients
   const [availableIngredients, setAvailableIngredients] = useState([]); // List of available ingredients from the server
+  const [isChecked, setIsChecked] = useState(false);
+
+  // Handler to update the checkbox state when it is clicked
+  const handleCheckboxChange = (event) => {
+    setIsChecked(event.target.checked); // Set the state to true or false based on whether it's checked
+  };
 
   // Fetch available ingredients from the server when the component mounts
   useEffect(() => {
@@ -30,7 +36,9 @@ function SearchContainer() {
     event.preventDefault();
     if (ingredientId && availableIngredients.length > 0) {
       // Find the ingredient name based on the selected id
-      const selectedIngredient = availableIngredients.find((ing) => ing.id.toString() === ingredientId);
+      const selectedIngredient = availableIngredients.find(
+        (ing) => ing.id.toString() === ingredientId
+      );
       if (selectedIngredient) {
         setIngredients([...ingredients, selectedIngredient.name]);
         setIngredientId(""); // Reset the selected ingredient
@@ -51,40 +59,73 @@ function SearchContainer() {
       .join("&");
 
     // Construct the URL for the API call
-    const url = `http://localhost:8080/recipes/byIngredients?${queryParams}`;
+    const url = `http://localhost:8080/recipes/byIngredients?${queryParams}`+'&flexible='+isChecked;
 
     // Call the endpoint
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
+        console.log(url)
         console.log("Recipes:", data);
         // Handle the response data (e.g., update state with recipes)
       })
       .catch((error) => {
+        console.log(url)
         console.error("Error fetching recipes:", error);
       });
   };
 
   return (
     <div>
-      <button><Link to="/">HOME</Link></button>
+      <button>
+        <Link to="/">HOME</Link>
+      </button>
       <div className="search-container">
+        
         <div className="search-filter">
           <form onSubmit={handleAddIngredient}>
             <div className="checkbox-container">
-              <input type="checkbox" id="vegan" name="vegan" value="vegan" />
-              <label htmlFor="vegan">Op. <strong>Vegana</strong></label>
+              <input
+                type="checkbox"
+                name="flexible"
+                value="true"
+                checked={isChecked}
+                onChange={handleCheckboxChange}
+              />
+              <label htmlFor="flexible">
+                <strong>Flexible</strong>
+              </label>
             </div>
             <div className="checkbox-container">
-              <input type="checkbox" id="celiaca" name="celiaca" value="celiaca" />
-              <label htmlFor="celiaca">Op. <strong>Celiaca</strong></label>
+              <input type="checkbox" id="vegan" name="vegan" value="vegan" />
+              <label htmlFor="vegan">
+                Op. <strong>Vegana</strong>
+              </label>
+            </div>
+            <div className="checkbox-container">
+              <input
+                type="checkbox"
+                id="celiaca"
+                name="celiaca"
+                value="celiaca"
+              />
+              <label htmlFor="celiaca">
+                Op. <strong>Celiaca</strong>
+              </label>
             </div>
             <div className="checkbox-container">
               <input type="checkbox" id="sal" name="sal" value="sal" />
-              <label htmlFor="sal">Op. <strong>Sin Sal</strong></label>
+              <label htmlFor="sal">
+                Op. <strong>Sin Sal</strong>
+              </label>
             </div>
+
             <Form.Label>Tiempo: {rangeValue} minutos</Form.Label>
-            <Form.Range max={120} value={rangeValue} onChange={handleRangeChange} />
+            <Form.Range
+              max={120}
+              value={rangeValue}
+              onChange={handleRangeChange}
+            />
 
             {/* Ingredient selection dropdown */}
             <select
@@ -99,7 +140,9 @@ function SearchContainer() {
                 </option>
               ))}
             </select>
-            <button type="submit" disabled={!ingredientId}>Añadir Ingrediente</button>
+            <button type="submit" disabled={!ingredientId}>
+              Añadir Ingrediente
+            </button>
           </form>
 
           <div className="submitted-ingredients">
@@ -112,7 +155,9 @@ function SearchContainer() {
           </div>
 
           <br />
-          <button type="button" onClick={fetchRecipesByIngredients}>Recomendar</button>
+          <button type="button" onClick={fetchRecipesByIngredients}>
+            Recomendar
+          </button>
         </div>
       </div>
     </div>
