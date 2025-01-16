@@ -7,6 +7,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
+import org.springframework.web.reactive.config.CorsRegistry;
 
 @Configuration
 @EnableWebSecurity
@@ -26,5 +27,6 @@ public class SecurityConfiguration {
     public WebSecurityCustomizer webSecurityCustomizer2() {
         return (web) -> web.ignoring().requestMatchers(new AntPathRequestMatcher("/recipes/**"));
     }
+
 
 }
