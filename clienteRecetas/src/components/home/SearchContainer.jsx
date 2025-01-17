@@ -53,6 +53,11 @@ function SearchContainer({onSearch}) {
 
   // Function to fetch recipes by ingredients
   const fetchRecipesByIngredients = () => {
+
+    if (ingredients.length === 0) {
+      console.log("No ingredients selected. Please select some ingredients before searching.");
+      return; // Exit the function if no ingredients are selected
+    }
     // Construct the query string with separate ingredients
     const queryParams = ingredients
       .map((ingredient) => `ingredients=${encodeURIComponent(ingredient)}`)
