@@ -3,17 +3,20 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./SearchResults.css";
 import RecipeCard from "./RecipeCard";
 
-function SearchResults() {
-	return (
-		<div>
-			<Container>
-				<Row>
-					<Col>
-						<RecipeCard></RecipeCard>
-					</Col>
-				</Row>
-			</Container>
-		</div>
+function SearchResults({ results }) {
+	console.log("Received results:", results);
+  return (
+    <div>
+      <Container>
+        <Row>
+          {results.map((result) => (
+            <Col key={result.id}>
+              <RecipeCard result={result} />
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </div>
   );
 }
 

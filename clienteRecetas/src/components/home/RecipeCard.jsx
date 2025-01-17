@@ -1,20 +1,17 @@
-import './RecipeCard.css'; 
+import React from 'react';
+import './RecipeCard.css';
+import PopUp from './PopUp.jsx'
 
-const RecipeCard = () => {
+const RecipeCard = ({ result }) => {
   return (
     <div className="card" style={{ width: '18rem' }}>
-      <img src="https://cdn.recetasderechupete.com/wp-content/uploads/2020/11/Tortilla-de-patatas-4.jpg" className="card-img-top" alt="..." />
+      <img src={result.image} className="card-img-top" alt={result.name} />
       <div className="card-body">
-      <img src="https://cdn.recetasderechupete.com/wp-content/uploads/2020/11/Tortilla-de-patatas-4.jpg" className="image" alt="imagen"/>
-        <div className="text-container">
-          <h5 className="title">Spaghetti</h5>
-          <p className="calories"> 157Cal - 100gr.</p>
-          <a href="#" className="button">Ver receta</a>
-        </div>
+        <h5 className="card-title">{result.name}</h5>
+        <PopUp result={result} /> 
       </div>
     </div>
   );
 }
 
 export default RecipeCard;
-

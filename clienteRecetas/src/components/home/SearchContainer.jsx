@@ -3,7 +3,7 @@ import { Form } from "react-bootstrap";
 import "./SearchContainer.css";
 import { Link } from "react-router-dom";
 
-function SearchContainer() {
+function SearchContainer({onSearch}) {
   const [rangeValue, setRangeValue] = useState(0);
   const [ingredientId, setIngredientId] = useState(""); // Store the selected ingredient's id
   const [ingredients, setIngredients] = useState([]); // List of added ingredients
@@ -61,13 +61,15 @@ function SearchContainer() {
     // Construct the URL for the API call
     const url = `http://localhost:8080/recipes/byIngredients?${queryParams}`+'&flexible='+isChecked;
 
+    onSearch(url);
+
     // Call the endpoint
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
         console.log(url)
         console.log("Recipes:", data);
-        // Handle the response data (e.g., update state with recipes)
+        
       })
       .catch((error) => {
         console.log(url)

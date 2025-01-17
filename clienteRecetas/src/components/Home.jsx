@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Home.css";
 import SearchContainer from "./home/SearchContainer";
@@ -7,6 +7,21 @@ import LandingPage from "./home/LandingPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function Home() {
+  const [searchResults, setSearchResults] = useState([]);
+
+  const handleSearch = async (url) => { 
+    try {
+      const response = await fetch(url); 
+      const data = await response.json();
+      setSearchResults(data);
+      console.log(url);
+      console.log(data);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+
+
   return (
     <Router>
       <Routes>
@@ -20,10 +35,10 @@ function Home() {
             <Container>
               <Row>
                 <Col>
-                  <SearchContainer />
+                  <SearchContainer onSearch={handleSearch} />
                 </Col>
                 <Col>
-                  <SearchResults />
+                  <SearchResults results={searchResults} />
                 </Col>
               </Row>
             </Container>
