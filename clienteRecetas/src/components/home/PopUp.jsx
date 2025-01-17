@@ -17,12 +17,16 @@ const PopUp = ({ result }) => {
       </Button>
 
       <Modal isOpen={modalIsOpen} toggle={toggleModal} centered>
-        <ModalHeader toggle={toggleModal}>
-          <img src={result.image} alt={result.name} className="modal-img" />
+
+        <ModalHeader toggle={null} className="ImagenModal">
+          <img src={result.image} alt={result.name} className="imagen" />
         </ModalHeader>
-        <ModalBody>
-          <div className="modal-content">
-            <h3>{result.name}</h3>
+
+        <ModalFooter className="ModalFooter">
+
+            <h3 className="titulo">{result.name}</h3>
+
+          <div className="ModalContent1">
             <p>
               <strong>Ingredientes:</strong>
             </p>
@@ -35,6 +39,9 @@ const PopUp = ({ result }) => {
                 </ul>
               )}
             </ul>
+          </div>
+
+          <div className="ModalContent2">
             <p>
               <strong>Instrucciones:</strong>
             </p>
@@ -48,8 +55,7 @@ const PopUp = ({ result }) => {
               )}
             </ol>
           </div>
-        </ModalBody>
-        <ModalFooter>
+          
           <Button color="secondary" onClick={toggleModal}>
             Cerrar
           </Button>
