@@ -5,6 +5,9 @@ import SearchContainer from "./home/SearchContainer";
 import SearchResults from "./home/SearchResults";
 import LandingPage from "./home/LandingPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./Login";
+import Register from "./Register";
+import UserProfile from "./UserProfile";
 
 function Home() {
   const [searchResults, setSearchResults] = useState([]);
@@ -27,6 +30,15 @@ function Home() {
       <Routes>
         {/* Route for the LandingPage at the root path */}
         <Route path="/" element={<LandingPage />} />
+
+        {/* Routes for the Login and Register*/}
+
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+
+        {/* Route for testing user data*/}
+
+        <Route path="/user" element={<UserProfile />} />
 
         {/* Route for the main app layout with search components */}
         <Route
