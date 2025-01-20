@@ -13,6 +13,8 @@ import org.springframework.web.reactive.config.CorsRegistry;
 @EnableWebSecurity
 public class SecurityConfiguration {
 
+
+
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         return http.authorizeHttpRequests((auth) -> auth.anyRequest().permitAll()).build();
@@ -26,6 +28,16 @@ public class SecurityConfiguration {
     @Bean
     public WebSecurityCustomizer webSecurityCustomizer2() {
         return (web) -> web.ignoring().requestMatchers(new AntPathRequestMatcher("/recipes/**"));
+    }
+
+    @Bean
+    public WebSecurityCustomizer webSecurityCustomizer3() {
+        return (web) -> web.ignoring().requestMatchers(new AntPathRequestMatcher("/auth/**"));
+    }
+
+    @Bean
+    public WebSecurityCustomizer webSecurityCustomizer4() {
+        return (web) -> web.ignoring().requestMatchers(new AntPathRequestMatcher("/users/**"));
     }
 
 
