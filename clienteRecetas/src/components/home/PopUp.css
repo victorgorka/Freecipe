@@ -1,34 +1,78 @@
+.recipe-detail {
+  .ModalFooter {
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+}
+.recipe-detail__details {
+  color: white;
+  display: flex;
+  gap: 15px;
+}
 
-  .ModalContent1{
-    color:white;
-  }
-  .ModalContent2{
-    color: white;
-  }
-  .ModalFooter{
+.recipe-detail__ingredients {
+  border-right: 1px solid white;
+  font-size: .85rem;
+  padding-right: 15px;
+  text-align: right;
+}
+
+.recipe-detail__instructions {
+  font-size: 0.85rem;
+}
+
+  .ModalFooter1{
     display: flex;
-    flex-direction: row;
-    color:#a8975e;
+    justify-content: space-evenly;
     background-color: black !important;
     opacity: 0.8 !important; 
+    width: auto;
   }
-  .imagen {
+ .imagen {
     width: 100%; 
     height: auto; 
-    display: block; 
-   
+  } 
+  .Color{
+    width: 100%;
+    height: auto;
+    background-color: #bcaf756f;
   }
   .ImagenModal{
     margin: 0 auto;
     padding: 0px;
-  }
-  
-  
+  }  
   .titulo{
     display: block;
+    align-items: center;
     color: #a8975e;
     text-transform: uppercase !important; 
     text-decoration: underline; 
     text-decoration-color: white; 
     text-decoration-line: underline;
+  }
+  .btnCerrar{
+    background-color: transparent;
+    position: absolute;
+    border:none;
+    right: 10px;
+  }
+  .botoncito{
+    background-color: #bcaf75;
+    border: none;
+  }
+  .botoncito:hover{
+    background-color:#a8975e;
+  }
+  ul.recipe-detail__list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  @media (min-width: 576px) {
+    .recipe-detail {
+      .modal-dialog {
+        max-width: 80%;
+      }
+    }
   }

@@ -127,8 +127,9 @@ function SearchContainer({onSearch}) {
               </label>
             </div>
 
-            <Form.Label>Tiempo: {rangeValue} minutos</Form.Label>
-            <Form.Range
+            <Form.Label className="tiempo">Tiempo: {rangeValue} minutos</Form.Label>
+            <Form.Range 
+              className="tiempo"
               max={120}
               value={rangeValue}
               onChange={handleRangeChange}
@@ -162,7 +163,7 @@ function SearchContainer({onSearch}) {
           </div>
 
           <br />
-          <button type="button" onClick={fetchRecipesByIngredients}>
+          <button  onClick={fetchRecipesByIngredients} className="botonR">
             Recomendar
           </button>
         </div>

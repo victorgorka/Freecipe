@@ -12,53 +12,47 @@ const PopUp = ({ result }) => {
 
   return (
     <>
-      <Button color="success" onClick={toggleModal}>
+      <Button className="botoncito" onClick={toggleModal}>
         Ver receta
       </Button>
 
-      <Modal isOpen={modalIsOpen} toggle={toggleModal} centered>
-
+      <Modal isOpen={modalIsOpen} toggle={toggleModal} wrapClassName="recipe-detail" centered>
         <ModalHeader toggle={null} className="ImagenModal">
-          <img src={result.image} alt={result.name} className="imagen" />
+          <Button className="btnCerrar" onClick={toggleModal}>X</Button>
+          <div className="Color">
+            <img src={result.image} alt={result.name} className="imagen" />
+          </div>
         </ModalHeader>
 
         <ModalFooter className="ModalFooter">
-
-            <h3 className="titulo">{result.name}</h3>
-
-          <div className="ModalContent1">
-            <p>
-              <strong>Ingredientes:</strong>
-            </p>
-            <ul>
-              {result.ingredients && result.ingredients.length > 0 && (
-                <ul>
-                  {result.ingredients.map((ingredient) => (
-                    <li key={ingredient.id}>{ingredient.name}</li>
-                  ))}
-                </ul>
-              )}
-            </ul>
-          </div>
-
-          <div className="ModalContent2">
-            <p>
-              <strong>Instrucciones:</strong>
-            </p>
-            <ol>
+          <h3 className="titulo">{result.name}</h3>
+          <div className="recipe-detail__details">
+            <div className="recipe-detail__ingredients">
+              <p>
+                <strong>Ingredientes</strong>
+              </p>
+                {result.ingredients && result.ingredients.length > 0 && (
+                  <ul className="recipe-detail__list recipe-detail__list--ingredients">
+                    {result.ingredients.map((ingredient) => (
+                      <li key={ingredient.id}>{ingredient.name}</li>
+                    ))}
+                  </ul>
+                )}
+            </div>
+            <div className="recipe-detail__instructions">
+              <p>
+                <strong>Instrucciones</strong>
+              </p>
               {result.instructions && result.instructions.length > 0 && (
-                <ol>
+                <ol className="recipe-detail__list">
                   {result.instructions.map((instruction, index) => (
                     <li key={index}>{instruction}</li>
                   ))}
                 </ol>
               )}
-            </ol>
+              <p>¡Buen provecho!</p>
+            </div>
           </div>
-          
-          <Button color="secondary" onClick={toggleModal}>
-            Cerrar
-          </Button>
         </ModalFooter>
       </Modal>
     </>

@@ -1,7 +1,11 @@
  .card {
-    width: 300px;
+    
     border-radius: 15px;
-    overflow: hidden;
+    padding: 0px;
+    height: auto;
+    margin: 5px;
+    display: stretch;
+    /* overflow: hidden; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-family: "Montserrat", sans-serif;
   }
@@ -19,9 +23,9 @@
   
   .title {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: medium;
+    margin-bottom: 2px;
     color: #bcaf75;
-    margin: 0;
   }
   
   .calories {
