@@ -3,7 +3,7 @@ body {
 	background-size: contain;
 	background-position: center;
 }
-
+/* 
 /* Main layout using Flexbox */
 .landing-page {
     display: flex;
@@ -13,31 +13,33 @@ body {
   
   .header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     padding: 20px;
   }
   
   .logo img {
-    width: 40px;
-    height: 40px;
+    max-width: 100px;
+    position: absolute;
     border: solid 2px #a8975e;
-  }
-  
-  .social-links a {
-    margin-left: 20px;
-    font-size: 18px;
-    text-decoration: none;
-    color: #333;
+    right: 5%;
   }
 
   .social-links{
-    border: solid 2px #a8975e;
+    width: 200px;
+    height: 50px;
+    border: solid 2px #bcaf75;
+    background-color: rgba(255, 255, 255, 0.607);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .Icon {
+    width: 30px; 
+    height: 30px; 
+    justify-content: center; 
   }
   
-  .social-links a:hover {
-    color: #0073e6;
-  }
   
   /* Main content */
   .main-content {
@@ -46,35 +48,30 @@ body {
     align-items: center;
     flex-grow: 1;
     padding: 20px;
+    height:auto;
+    width: 95%;
   }
   
   .info-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
+    width: 95%;
+    background-color: rgba(255, 255, 255, 0.607);
     border: solid 2px #a8975e;
   }
-  
+  h2{
+    display: inline;
+  }
   .text-left {
     flex: 1;
-    padding-right: 20px;
-  }
-  
-  .text-left h2 {
-    font-size: 24px;
-  }
-  
-  .text-left p {
-    font-size: 16px;
+    padding: 20px;
   }
   
   .image-right {
     flex: 1;
-    text-align: center;
+    text-align: right;
+    width: 30%;
   }
   
   .image-right img {
@@ -82,31 +79,47 @@ body {
     max-width: 200px;
     height: auto;
   }
+  .line{
+    background-color: black;
+    width: 40%;
+    height: 1px;
+    margin: 0 auto;
+  }
+ 
   
   /* Footer */
   .footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0);
   }
   
+   
   .continue-btn {
-    background-color: #0073e6;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 18px;
+    display: block;
+    width: 25%;
+    background-color: #ffffff7f;
+    color:  rgb(88, 88, 88);
+    text-align: center;
+    border-radius: 15px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 15px;
+    border: 2px solid rgb(88, 88, 88);
   }
-  
-  .continue-btn:hover {
-    background-color: #005bb5;
-  }
-
-  .continue-btn{
+  a{
+    color:  rgb(88, 88, 88);
+    font-weight: bold;
+    font-size: 16px;
     color: black;
-    background-color: rgba(238, 230, 230, 0.793);
-    border: 2px solid grey;
   }
-  
+  a:hover{
+    color:  rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+  }
+  .continue-btn:hover {
+    background-color: #ffffff;  
+    border-color: black;
+  }

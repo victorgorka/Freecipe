@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./PopUp.css";
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import { Button, Modal, ModalHeader, ModalFooter } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const PopUp = ({ result }) => {
@@ -12,14 +12,14 @@ const PopUp = ({ result }) => {
 
   return (
     <>
-      <Button className="botoncito" onClick={toggleModal}>
+      <Button className="btn" onClick={toggleModal}>
         Ver receta
       </Button>
 
       <Modal isOpen={modalIsOpen} toggle={toggleModal} wrapClassName="recipe-detail" centered>
         <ModalHeader toggle={null} className="ImagenModal">
           <Button className="btnCerrar" onClick={toggleModal}>X</Button>
-          <div className="Color">
+          <div className="transp">
             <img src={result.image} alt={result.name} className="imagen" />
           </div>
         </ModalHeader>

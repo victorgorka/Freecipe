@@ -1,10 +1,13 @@
 import React from 'react';
 import './LandingPage.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import landingImage from '../assets/Landing.jpg';
 import iconImage from '../assets/Web-02.png';
 import { Link } from 'react-router-dom';
+import facebookImage from '../../../../Design/Web-09.png';
+import instagramImage from '../../../../Design/Web-11.png';
+import equisImage from '../../../../Design/Web-10.png';
+
+
 
 const LandingPage = () => {
   return (
@@ -14,24 +17,26 @@ const LandingPage = () => {
           <img src={iconImage} alt="Logo" />
         </div>
         <div className="social-links">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faFacebookF} size="2x" /></a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faTwitter} size="2x" /></a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
+  <a href="https://facebook.com"><img src={facebookImage} alt="Facebook"className="Icon"/></a>
+  <a href="https://instagram.com"> <img src={instagramImage} alt="Instagram"className="Icon"/></a>
+  <a href="https://twitter.com"><img src={equisImage} alt="LogoX" className="Icon"/></a>
         </div>
+        
       </header>
 
       <main className="main-content">
         <div className="info-box">
           <div className="text-left">
-            <h2>Welcome to Our Platform!</h2>
-            <p>We offer amazing features to help you connect and grow. Join us today!</p>
+            <h2 className="LigthFont">Pah</h2>
+            <h2 className="BoldFont">komé!</h2>
+            <p>Dentro de poco Miroslav se va a ahorrar un pastizal en champú</p>
           </div>
           <div className="image-right">
             <img src={landingImage} alt="Illustration" />
           </div>
         </div>
       </main>
-
+      <div className="line"></div>
       <footer className="footer">
         <button className="continue-btn"><Link to="/search">CONTINUAR</Link></button>
       </footer>
