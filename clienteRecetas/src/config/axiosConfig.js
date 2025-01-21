@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create an Axios instance
 const axiosInstance = axios.create({
-    baseURL: 'http://localhost:8080/api', // Backend base URL
+    baseURL: 'http://localhost:8080/', // Backend base URL
 });
 
 // Add a request interceptor

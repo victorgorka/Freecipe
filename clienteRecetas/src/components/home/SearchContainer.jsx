@@ -74,9 +74,6 @@ function SearchContainer({ onSearch }) {
 
   return (
     <div>
-      <button>
-        <Link to="/">HOME</Link>
-      </button>
       <div className="search-container">
         <div className="search-filter">
           <form

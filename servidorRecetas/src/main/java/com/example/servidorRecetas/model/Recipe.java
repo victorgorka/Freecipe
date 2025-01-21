@@ -1,6 +1,8 @@
 package com.example.servidorRecetas.model;
 
 import jakarta.persistence.*;
+import org.springframework.boot.autoconfigure.web.WebProperties;
+
 import java.util.List;
 import java.util.List;
 

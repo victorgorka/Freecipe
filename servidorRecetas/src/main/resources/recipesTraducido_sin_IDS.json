@@ -1,0 +1,1956 @@
+{
+  "recipes": [
+    {
+      "name": "Pizza margarita clásica",
+      "ingredients": [
+        "masa de pizza",
+        "salsa de tomate",
+        "Queso mozzarella fresco",
+        "hojas de albahaca fresca",
+        "Aceite de oliva",
+        "Sal y pimienta al gusto"
+      ],
+      "instructions": [
+        "Precalienta el horno a 475°F (245°C).",
+        "Estirar la masa de pizza y esparcir uniformemente la salsa de tomate.",
+        "Cubra con rodajas de mozzarella fresca y hojas de albahaca fresca.",
+        "Rocíe con aceite de oliva y sazone con sal y pimienta.",
+        "Hornee en el horno precalentado durante 12-15 minutos o hasta que la corteza esté dorada.",
+        "Cortar y servir caliente."
+      ],
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 15,
+      "servings": 4,
+      "difficulty": "Fácil",
+      "cuisine": "italiano",
+      "caloriesPerServing": 300,
+      "tags": [
+        "Pizza",
+        "italiano"
+      ],
+      "userId": 166,
+      "image": "https://cdn.dummyjson.com/recipe-images/1.webp",
+      "rating": 4.6,
+      "reviewCount": 98,
+      "mealType": [
+        "Cena"
+      ]
+    },
+    {
+      "name": "Salteado Vegetariano",
+      "ingredients": [
+        "Tofu, en cubitos",
+        "floretes de brócoli",
+        "Zanahorias, en rodajas",
+        "Pimientos morrones, rebanados",
+        "Salsa de soja",
+        "jengibre, picado",
+        "Ajo, picado",
+        "aceite de sésamo",
+        "Arroz cocido para servir"
+      ],
+      "instructions": [
+        "En un wok, calienta el aceite de sésamo a fuego medio-alto.",
+        "Agregue el jengibre y el ajo picados y saltee hasta que estén fragantes.",
+        "Agrega el tofu en cubos y sofríe hasta que esté dorado.",
+        "Agregue el brócoli, las zanahorias y los pimientos morrones. ",
+        "Vierta la salsa de soja sobre el salteado y revuelva para combinar.",
+        "Sirva sobre arroz cocido."
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 20,
+      "servings": 3,
+      "difficulty": "Medio",
+      "cuisine": "asiático",
+      "caloriesPerServing": 250,
+      "tags": [
+        "Vegetariano",
+        "Salteado",
+        "asiático"
+      ],
+      "userId": 143,
+      "image": "https://cdn.dummyjson.com/recipe-images/2.webp",
+      "rating": 4.7,
+      "reviewCount": 26,
+      "mealType": [
+        "Almuerzo"
+      ]
+    },
+    {
+      "name": "Galletas con chispas de chocolate",
+      "ingredients": [
+        "Harina para todo uso",
+        "Mantequilla, ablandada",
+        "Azúcar moreno",
+        "azúcar blanca",
+        "Huevos",
+        "extracto de vainilla",
+        "Bicarbonato",
+        "Sal",
+        "chispas de chocolate"
+      ],
+      "instructions": [
+        "Precalienta el horno a 350°F (175°C).",
+        "En un bol, mezcle la mantequilla blanda, el azúcar moreno y el azúcar blanca.",
+        "Batir los huevos uno a la vez y luego agregar el extracto de vainilla.",
+        "Combine la harina, el bicarbonato de sodio y la sal. ",
+        "Incorpora las chispas de chocolate.",
+        "Deje caer cucharadas redondeadas de masa sobre bandejas para hornear sin engrasar.",
+        "Hornee durante 10-12 minutos o hasta que los bordes estén dorados.",
+        "Deje que las galletas se enfríen en la bandeja para hornear durante unos minutos antes de transferirlas a una rejilla."
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 10,
+      "servings": 24,
+      "difficulty": "Fácil",
+      "cuisine": "Americano",
+      "caloriesPerServing": 150,
+      "tags": [
+        "Galletas",
+        "Postre",
+        "Hornada"
+      ],
+      "userId": 34,
+      "image": "https://cdn.dummyjson.com/recipe-images/3.webp",
+      "rating": 4.9,
+      "reviewCount": 13,
+      "mealType": [
+        "Bocadillo",
+        "Postre"
+      ]
+    },
+    {
+      "name": "Pasta Alfredo con Pollo",
+      "ingredients": [
+        "pasta fetuccini",
+        "Pechuga de pollo, en rodajas",
+        "crema espesa",
+        "Queso parmesano rallado",
+        "Ajo, picado",
+        "Manteca",
+        "Sal y pimienta al gusto",
+        "Perejil fresco para decorar"
+      ],
+      "instructions": [
+        "Cocine la pasta fettuccine según las instrucciones del paquete.",
+        "En una sartén, saltee el pollo en rodajas con mantequilla hasta que esté completamente cocido.",
+        "Agregue el ajo picado y cocine hasta que esté fragante.",
+        "Vierta la crema espesa y el queso parmesano rallado. ",
+        "Sazone con sal y pimienta al gusto.",
+        "Combina la salsa Alfredo con la pasta cocida.",
+        "Adorne con perejil fresco antes de servir."
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 20,
+      "servings": 4,
+      "difficulty": "Medio",
+      "cuisine": "italiano",
+      "caloriesPerServing": 500,
+      "tags": [
+        "Pastas",
+        "Pollo"
+      ],
+      "userId": 136,
+      "image": "https://cdn.dummyjson.com/recipe-images/4.webp",
+      "rating": 4.9,
+      "reviewCount": 82,
+      "mealType": [
+        "Almuerzo",
+        "Cena"
+      ]
+    },
+    {
+      "name": "Pollo Con Salsa De Mango",
+      "ingredients": [
+        "muslos de pollo",
+        "mango, cortado en cubitos",
+        "Cebolla morada, finamente picada",
+        "cilantro, picado",
+        "Zumo de lima",
+        "Jalapeño, picado",
+        "Sal y pimienta al gusto",
+        "Arroz cocido para servir"
+      ],
+      "instructions": [
+        "Sazone los muslos de pollo con sal y pimienta.",
+        "Ase o hornee el pollo hasta que esté completamente cocido.",
+        "En un tazón, combine el mango cortado en cubitos, la cebolla morada picada, el cilantro, el jalapeño picado y el jugo de limón.",
+        "Corta el pollo cocido en dados y mézclalo con la salsa de mango.",
+        "Sirva sobre arroz cocido."
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 25,
+      "servings": 3,
+      "difficulty": "Fácil",
+      "cuisine": "mexicano",
+      "caloriesPerServing": 380,
+      "tags": [
+        "Pollo",
+        "salsa"
+      ],
+      "userId": 26,
+      "image": "https://cdn.dummyjson.com/recipe-images/5.webp",
+      "rating": 4.9,
+      "reviewCount": 63,
+      "mealType": [
+        "Cena"
+      ]
+    },
+    {
+      "name": "Ensalada De Quinua Con Aguacate",
+      "ingredients": [
+        "Quinua, cocida",
+        "Aguacate, cortado en cubitos",
+        "Tomates cherry, partidos por la mitad",
+        "Pepino, cortado en cubitos",
+        "Pimiento rojo, cortado en cubitos",
+        "Queso feta, desmenuzado",
+        "Aderezo de vinagreta de limón",
+        "Sal y pimienta al gusto"
+      ],
+      "instructions": [
+        "En un tazón grande, combine la quinua cocida, el aguacate cortado en cubitos, los tomates cherry cortados por la mitad, el pepino cortado en cubitos, el pimiento rojo cortado en cubitos y el queso feta desmenuzado.",
+        "Rocíe con el aderezo de vinagreta de limón y revuelva para combinar.",
+        "Sazone con sal y pimienta al gusto.",
+        "Enfriar en el frigorífico antes de servir."
+      ],
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 15,
+      "servings": 4,
+      "difficulty": "Fácil",
+      "cuisine": "mediterráneo",
+      "caloriesPerServing": 280,
+      "tags": [
+        "Ensalada",
+        "Quinoa"
+      ],
+      "userId": 197,
+      "image": "https://cdn.dummyjson.com/recipe-images/6.webp",
+      "rating": 4.4,
+      "reviewCount": 59,
+      "mealType": [
+        "Almuerzo",
+        "Guarnición"
+      ]
+    },
+    {
+      "name": "Bruschetta de tomate y albahaca",
+      "ingredients": [
+        "baguette, en rodajas",
+        "Tomates, cortados en cubitos",
+        "Albahaca fresca, picada",
+        "Dientes de ajo, picados",
+        "glaseado balsámico",
+        "Aceite de oliva",
+        "Sal y pimienta al gusto"
+      ],
+      "instructions": [
+        "Precalienta el horno a 375°F (190°C).",
+        "Coloque las rebanadas de baguette en una bandeja para hornear y tuéstelas en el horno hasta que estén doradas.",
+        "En un bol, combine los tomates cortados en cubitos, la albahaca fresca picada, el ajo picado y un chorrito de aceite de oliva.",
+        "Sazone con sal y pimienta al gusto.",
+        "Cubra cada rebanada de baguette tostada con la mezcla de tomate y albahaca.",
+        "Rocíe con glaseado balsámico antes de servir."
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 10,
+      "servings": 6,
+      "difficulty": "Fácil",
+      "cuisine": "italiano",
+      "caloriesPerServing": 120,
+      "tags": [
+        "Brusqueta",
+        "italiano"
+      ],
+      "userId": 137,
+      "image": "https://cdn.dummyjson.com/recipe-images/7.webp",
+      "rating": 4.7,
+      "reviewCount": 95,
+      "mealType": [
+        "Aperitivo"
+      ]
+    },
+    {
+      "name": "Salteado de carne y brócoli",
+      "ingredients": [
+        "Solomillo de ternera, en rodajas finas",
+        "floretes de brócoli",
+        "Salsa de soja",
+        "salsa de ostras",
+        "aceite de sésamo",
+        "Ajo, picado",
+        "jengibre, picado",
+        "Maicena",
+        "Arroz blanco cocido para servir"
+      ],
+      "instructions": [
+        "En un tazón, mezcle la salsa de soja, la salsa de ostras, el aceite de sésamo y la maicena para crear la salsa.",
+        "En un wok, sofreír la carne de res en rodajas finas hasta que se dore. ",
+        "Saltee los floretes de brócoli, el ajo picado y el jengibre picado en el mismo wok.",
+        "Vuelva a colocar la carne cocida en el wok y vierta la salsa sobre la mezcla.",
+        "Revuelva hasta que todo esté cubierto y caliente.",
+        "Sirva sobre arroz blanco cocido."
+      ],
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 15,
+      "servings": 4,
+      "difficulty": "Medio",
+      "cuisine": "asiático",
+      "caloriesPerServing": 380,
+      "tags": [
+        "Carne de res",
+        "Salteado",
+        "asiático"
+      ],
+      "userId": 18,
+      "image": "https://cdn.dummyjson.com/recipe-images/8.webp",
+      "rating": 4.7,
+      "reviewCount": 58,
+      "mealType": [
+        "Cena"
+      ]
+    },
+    {
+      "name": "Ensalada Caprese",
+      "ingredients": [
+        "Tomates, rebanados",
+        "Queso mozzarella fresco, en rodajas",
+        "hojas de albahaca fresca",
+        "glaseado balsámico",
+        "Aceite de oliva virgen extra",
+        "Sal y pimienta al gusto"
+      ],
+      "instructions": [
+        "Coloque rodajas alternas de tomates y mozzarella fresca en una fuente para servir.",
+        "Coloque hojas de albahaca fresca entre las rodajas.",
+        "Rocíe con glaseado balsámico y aceite de oliva virgen extra.",
+        "Sazone con sal y pimienta al gusto.",
+        "Sirve inmediatamente como una refrescante ensalada."
+      ],
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 0,
+      "servings": 2,
+      "difficulty": "Fácil",
+      "cuisine": "italiano",
+      "caloriesPerServing": 200,
+      "tags": [
+        "Ensalada",
+        "Caprese"
+      ],
+      "userId": 128,
+      "image": "https://cdn.dummyjson.com/recipe-images/9.webp",
+      "rating": 4.6,
+      "reviewCount": 82,
+      "mealType": [
+        "Almuerzo"
+      ]
+    },
+    {
+      "name": "Pasta con gambas y gambas",
+      "ingredients": [
+        "pasta linguini",
+        "Camarones, pelados y desvenados",
+        "Ajo, picado",
+        "Vino blanco",
+        "Zumo de limón",
+        "Hojuelas de pimiento rojo",
+        "Perejil fresco, picado",
+        "Sal y pimienta al gusto"
+      ],
+      "instructions": [
+        "Cocine la pasta de linguini según las instrucciones del paquete.",
+        "En una sartén, saltee el ajo picado en aceite de oliva hasta que esté fragante.",
+        "Agregue los camarones y cocine hasta que estén rosados ​​y opacos.",
+        "Vierta el vino blanco y el jugo de limón. ",
+        "Sazone con hojuelas de pimiento rojo, sal y pimienta.",
+        "Mezcle los linguini cocidos con la salsa de gambas y gambas.",
+        "Adorne con perejil fresco picado antes de servir."
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 20,
+      "servings": 3,
+      "difficulty": "Medio",
+      "cuisine": "italiano",
+      "caloriesPerServing": 400,
+      "tags": [
+        "Pastas",
+        "Camarón"
+      ],
+      "userId": 114,
+      "image": "https://cdn.dummyjson.com/recipe-images/10.webp",
+      "rating": 4.3,
+      "reviewCount": 5,
+      "mealType": [
+        "Cena"
+      ]
+    },
+    {
+      "name": "Pollo Biryani",
+      "ingredients": [
+        "arroz basmati",
+        "Pollo, cortado en trozos",
+        "Cebollas, en rodajas finas",
+        "Tomates, picados",
+        "Yogur",
+        "Pasta de jengibre y ajo",
+        "biryani masala",
+        "Chiles verdes, rebanados",
+        "hojas de cilantro fresco",
+        "hojas de menta",
+        "ghee",
+        "sal al gusto"
+      ],
+      "instructions": [
+        "Marina el pollo con yogur, pasta de jengibre y ajo, biryani masala y sal.",
+        "En una olla, sofreír las cebollas en rodajas hasta que estén doradas. ",
+        "Coloque en capas el pollo marinado, los tomates picados, la mitad de las cebollas fritas y el arroz en la olla.",
+        "Cubra con ghee, chiles verdes, hojas de cilantro fresco, hojas de menta y las cebollas fritas restantes.",
+        "Tapar y cocinar a fuego lento hasta que el arroz esté completamente cocido y aromático.",
+        "Sirva caliente, adornado con cilantro adicional y hojas de menta."
+      ],
+      "prepTimeMinutes": 30,
+      "cookTimeMinutes": 45,
+      "servings": 6,
+      "difficulty": "Medio",
+      "cuisine": "pakistaní",
+      "caloriesPerServing": 550,
+      "tags": [
+        "Biryani",
+        "Pollo",
+        "Plato principal",
+        "indio",
+        "pakistaní",
+        "asiático"
+      ],
+      "userId": 133,
+      "image": "https://cdn.dummyjson.com/recipe-images/11.webp",
+      "rating": 5,
+      "reviewCount": 32,
+      "mealType": [
+        "Almuerzo",
+        "Cena"
+      ]
+    },
+    {
+      "name": "Pollo Karahi",
+      "ingredients": [
+        "Pollo, cortado en trozos",
+        "Tomates, picados",
+        "Chiles verdes, rebanados",
+        "Jengibre cortado en juliana",
+        "Ajo, picado",
+        "polvo de cilantro",
+        "comino en polvo",
+        "chile rojo en polvo",
+        "garam masala",
+        "aceite de cocina",
+        "hojas de cilantro fresco",
+        "sal al gusto"
+      ],
+      "instructions": [
+        "En un wok (karahi), caliente el aceite de cocina y saltee el ajo picado hasta que esté dorado.",
+        "Agregue los trozos de pollo y cocine hasta que se doren por todos lados.",
+        "Agregue los tomates picados, los chiles verdes, el jengibre y las especias. ",
+        "Tape y cocine a fuego lento hasta que el pollo esté tierno y el aceite se separe del masala.",
+        "Adorne con hojas de cilantro fresco y sirva caliente con pan naan o arroz."
+      ],
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 30,
+      "servings": 4,
+      "difficulty": "Fácil",
+      "cuisine": "pakistaní",
+      "caloriesPerServing": 420,
+      "tags": [
+        "Pollo",
+        "Karahi",
+        "Plato principal",
+        "indio",
+        "pakistaní",
+        "asiático"
+      ],
+      "userId": 49,
+      "image": "https://cdn.dummyjson.com/recipe-images/12.webp",
+      "rating": 4.8,
+      "reviewCount": 68,
+      "mealType": [
+        "Almuerzo",
+        "Cena"
+      ]
+    },
+    {
+      "name": "Alo Keema",
+      "ingredients": [
+        "Carne molida",
+        "Patatas, peladas y cortadas en cubitos",
+        "Cebollas finamente picadas",
+        "Tomates, picados",
+        "Pasta de jengibre y ajo",
+        "comino en polvo",
+        "polvo de cilantro",
+        "cúrcuma en polvo",
+        "chile rojo en polvo",
+        "aceite de cocina",
+        "hojas de cilantro fresco",
+        "sal al gusto"
+      ],
+      "instructions": [
+        "En una sartén calentar aceite de cocina y sofreír la cebolla picada hasta que esté dorada.",
+        "Agregue la pasta de jengibre y ajo y saltee hasta que esté fragante.",
+        "Agregue la carne molida y cocine hasta que se dore. ",
+        "Agregue las patatas cortadas en cubitos, los tomates picados y las especias. ",
+        "Tape y cocine a fuego lento hasta que las patatas estén tiernas y el masala bien cocido.",
+        "Adorne con hojas de cilantro fresco y sirva caliente con pan naan o arroz."
+      ],
+      "prepTimeMinutes": 25,
+      "cookTimeMinutes": 35,
+      "servings": 5,
+      "difficulty": "Medio",
+      "cuisine": "pakistaní",
+      "caloriesPerServing": 380,
+      "tags": [
+        "kema",
+        "Papas",
+        "Plato principal",
+        "pakistaní",
+        "asiático"
+      ],
+      "userId": 152,
+      "image": "https://cdn.dummyjson.com/recipe-images/13.webp",
+      "rating": 4.6,
+      "reviewCount": 53,
+      "mealType": [
+        "Almuerzo",
+        "Cena"
+      ]
+    },
+    {
+      "name": "Kebabs Chapli",
+      "ingredients": [
+        "Carne molida",
+        "Cebollas finamente picadas",
+        "Tomates, finamente picados",
+        "Chiles verdes, picados",
+        "hojas de cilantro picadas",
+        "Semillas de granada",
+        "Pasta de jengibre y ajo",
+        "comino en polvo",
+        "polvo de cilantro",
+        "chile rojo en polvo",
+        "Huevo",
+        "aceite de cocina",
+        "sal al gusto"
+      ],
+      "instructions": [
+        "En un tazón grande, mezcle la carne molida, la cebolla picada, los tomates, los chiles verdes, las hojas de cilantro y las semillas de granada.",
+        "Agregue la pasta de jengibre y ajo, el comino en polvo, el cilantro en polvo, el chile rojo en polvo y la sal. ",
+        "Agregue un huevo para unir la mezcla y forme brochetas redondas y planas.",
+        "Calienta aceite de cocina en una sartén y fríe las brochetas hasta que se doren por ambos lados.",
+        "Sirva caliente con naan o chutney de menta."
+      ],
+      "prepTimeMinutes": 30,
+      "cookTimeMinutes": 20,
+      "servings": 4,
+      "difficulty": "Medio",
+      "cuisine": "pakistaní",
+      "caloriesPerServing": 320,
+      "tags": [
+        "kebabs",
+        "Carne de res",
+        "indio",
+        "pakistaní",
+        "asiático"
+      ],
+      "userId": 152,
+      "image": "https://cdn.dummyjson.com/recipe-images/14.webp",
+      "rating": 4.7,
+      "reviewCount": 98,
+      "mealType": [
+        "Almuerzo",
+        "Cena",
+        "Aperitivos"
+      ]
+    },
+    {
+      "name": "Saag (espinacas) con Makki di Roti",
+      "ingredients": [
+        "Hojas de mostaza, lavadas y picadas",
+        "Espinacas, lavadas y picadas",
+        "Harina de maíz (makki ka atta)",
+        "Cebollas finamente picadas",
+        "Chiles verdes, picados",
+        "Jengibre rallado",
+        "ghee",
+        "sal al gusto"
+      ],
+      "instructions": [
+        "Hervir las hojas de mostaza y las espinacas hasta que estén tiernas. ",
+        "En una sartén, saltee las cebollas picadas, los chiles verdes y el jengibre rallado en ghee hasta que estén dorados.",
+        "Agrega la pasta de verduras y cocina hasta que espese.",
+        "Mientras tanto, amase la harina de maíz con agua hasta formar una masa. ",
+        "Cocine los rotis en una plancha hasta que estén dorados.",
+        "Sirva saag caliente con makki di roti y una cucharada de ghee."
+      ],
+      "prepTimeMinutes": 40,
+      "cookTimeMinutes": 30,
+      "servings": 3,
+      "difficulty": "Medio",
+      "cuisine": "pakistaní",
+      "caloriesPerServing": 280,
+      "tags": [
+        "saag",
+        "Roti",
+        "Plato principal",
+        "indio",
+        "pakistaní",
+        "asiático"
+      ],
+      "userId": 43,
+      "image": "https://cdn.dummyjson.com/recipe-images/15.webp",
+      "rating": 4.3,
+      "reviewCount": 86,
+      "mealType": [
+        "Desayuno",
+        "Almuerzo",
+        "Cena"
+      ]
+    },
+    {
+      "name": "Sopa De Ramen Japonesa",
+      "ingredients": [
+        "fideos ramen",
+        "caldo de pollo",
+        "Salsa de soja",
+        "Mirín",
+        "aceite de sésamo",
+        "Hongos shiitake, rebanados",
+        "bok choy, picado",
+        "Cebollas verdes, en rodajas",
+        "Huevos pasados ​​por agua",
+        "Rebanadas de pollo a la parrilla",
+        "Alga noruega (nori)"
+      ],
+      "instructions": [
+        "Cocine los fideos ramen según las instrucciones del paquete y reserve.",
+        "En una olla, combine el caldo de pollo, la salsa de soja, el mirin y el aceite de sésamo. ",
+        "Agregue los champiñones shiitake en rodajas y el bok choy picado. ",
+        "Divida los fideos cocidos en tazones para servir y vierta el caldo caliente sobre ellos.",
+        "Cubra con cebollas verdes, huevos pasados ​​por agua, rodajas de pollo asado y nori.",
+        "¡Sirve caliente y disfruta del auténtico ramen japonés!"
+      ],
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 25,
+      "servings": 2,
+      "difficulty": "Medio",
+      "cuisine": "japonés",
+      "caloriesPerServing": 480,
+      "tags": [
+        "Ramen",
+        "japonés",
+        "Sopa",
+        "asiático"
+      ],
+      "userId": 85,
+      "image": "https://cdn.dummyjson.com/recipe-images/16.webp",
+      "rating": 4.9,
+      "reviewCount": 38,
+      "mealType": [
+        "Cena"
+      ]
+    },
+    {
+      "name": "Tagine marroquí de garbanzos",
+      "ingredients": [
+        "Garbanzos, cocidos",
+        "Tomates, picados",
+        "Zanahorias, cortadas en cubitos",
+        "Cebollas finamente picadas",
+        "Ajo, picado",
+        "Comino",
+        "Cilantro",
+        "Canela",
+        "Paprika",
+        "caldo de verduras",
+        "aceitunas",
+        "cilantro fresco, picado"
+      ],
+      "instructions": [
+        "En un tajín o en una olla grande, saltee las cebollas picadas y el ajo picado hasta que se ablanden.",
+        "Agregue las zanahorias picadas, los tomates picados y los garbanzos cocidos.",
+        "Sazone con comino, cilantro, canela y pimentón. ",
+        "Vierta el caldo de verduras y cocine a fuego lento. ",
+        "Agregue las aceitunas y decore con cilantro fresco antes de servir.",
+        "Sirva este sabroso plato marroquí con cuscús o pan crujiente."
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 30,
+      "servings": 4,
+      "difficulty": "Fácil",
+      "cuisine": "marroquí",
+      "caloriesPerServing": 320,
+      "tags": [
+        "tajín",
+        "Garbanzo",
+        "marroquí"
+      ],
+      "userId": 207,
+      "image": "https://cdn.dummyjson.com/recipe-images/17.webp",
+      "rating": 4.5,
+      "reviewCount": 50,
+      "mealType": [
+        "Cena"
+      ]
+    },
+    {
+      "name": "bibimbap coreano",
+      "ingredients": [
+        "arroz blanco cocido",
+        "Bulgogi de ternera (rebanadas de ternera marinadas y asadas)",
+        "Zanahorias, cortadas en juliana y salteadas",
+        "Espinacas, blanqueadas y sazonadas",
+        "Calabacín, rebanado y asado",
+        "Brotes de soja, blanqueados",
+        "Huevo frito",
+        "Gochujang (pasta de pimiento rojo coreano)",
+        "aceite de sésamo",
+        "Semillas de sésamo tostadas"
+      ],
+      "instructions": [
+        "Coloque el arroz blanco cocido en un bol.",
+        "Cubra con bulgogi de res, zanahorias salteadas, espinacas sazonadas, calabacines asados ​​y brotes de soja blanqueados.",
+        "Coloque un huevo frito encima y rocíe con gochujang y aceite de sésamo.",
+        "Espolvorea con semillas de sésamo tostadas antes de servir.",
+        "¡Mezcla todo antes de disfrutar de este delicioso bibimbap coreano!",
+        "Siéntase libre de personalizarlo con vegetales o proteínas adicionales."
+      ],
+      "prepTimeMinutes": 30,
+      "cookTimeMinutes": 20,
+      "servings": 2,
+      "difficulty": "Medio",
+      "cuisine": "coreano",
+      "caloriesPerServing": 550,
+      "tags": [
+        "Bibimbap",
+        "coreano",
+        "Arroz"
+      ],
+      "userId": 121,
+      "image": "https://cdn.dummyjson.com/recipe-images/18.webp",
+      "rating": 4.9,
+      "reviewCount": 56,
+      "mealType": [
+        "Cena"
+      ]
+    },
+    {
+      "name": "Musaca griega",
+      "ingredients": [
+        "Berenjenas, en rodajas",
+        "Cordero o ternera molida",
+        "Cebollas finamente picadas",
+        "Ajo, picado",
+        "Tomates triturados",
+        "Vino tinto",
+        "Canela",
+        "Pimienta de Jamaica",
+        "Nuez moscada",
+        "Aceite de oliva",
+        "Leche",
+        "Harina",
+        "queso parmesano",
+        "yemas de huevo"
+      ],
+      "instructions": [
+        "Precalienta el horno a 375°F (190°C).",
+        "Saltee las berenjenas en rodajas en aceite de oliva hasta que se doren. ",
+        "En la misma sartén, cocine la cebolla picada y el ajo picado hasta que se ablanden.",
+        "Agregue el cordero o la ternera molida y dore. ",
+        "En una cacerola aparte, prepare la salsa bechamel: derrita la mantequilla, agregue la harina, agregue la leche y cocine hasta que espese.",
+        "Retire del fuego y agregue el queso parmesano y las yemas de huevo.",
+        "En una fuente para horno, coloque capas de berenjenas y la mezcla de carne. ",
+        "Hornee durante 40-45 minutos hasta que estén dorados. ",
+        "¡Sirve rebanadas de moussaka calientes y disfruta de este clásico griego!"
+      ],
+      "prepTimeMinutes": 45,
+      "cookTimeMinutes": 45,
+      "servings": 6,
+      "difficulty": "Medio",
+      "cuisine": "Griego",
+      "caloriesPerServing": 420,
+      "tags": [
+        "Musaca",
+        "Griego"
+      ],
+      "userId": 173,
+      "image": "https://cdn.dummyjson.com/recipe-images/19.webp",
+      "rating": 4.3,
+      "reviewCount": 26,
+      "mealType": [
+        "Cena"
+      ]
+    },
+    {
+      "name": "Pollo Con Mantequilla (Murgh Makhani)",
+      "ingredients": [
+        "Muslos de pollo, deshuesados ​​y sin piel",
+        "Yogur",
+        "Pasta de jengibre y ajo",
+        "garam masala",
+        "Chile rojo de Cachemira en polvo",
+        "puré de tomate",
+        "Manteca",
+        "crema espesa",
+        "Kasuri methi (hojas secas de fenogreco)",
+        "Azúcar",
+        "sal al gusto"
+      ],
+      "instructions": [
+        "Marina los muslos de pollo en una mezcla de yogur, pasta de jengibre y ajo, garam masala y chile rojo de Cachemira en polvo.",
+        "En una sartén derrita la mantequilla y saltee el pollo marinado hasta que se dore.",
+        "Agrega el puré de tomate y cocina hasta que el aceite se separe. ",
+        "Espolvoree kasuri methi, azúcar y sal. ",
+        "Sirva este pollo cremoso con mantequilla sobre arroz o con pan naan para vivir una auténtica experiencia pakistaní/india."
+      ],
+      "prepTimeMinutes": 30,
+      "cookTimeMinutes": 25,
+      "servings": 4,
+      "difficulty": "Medio",
+      "cuisine": "pakistaní",
+      "caloriesPerServing": 480,
+      "tags": [
+        "Pollo a la mantequilla",
+        "Curry",
+        "indio",
+        "pakistaní",
+        "asiático"
+      ],
+      "userId": 138,
+      "image": "https://cdn.dummyjson.com/recipe-images/20.webp",
+      "rating": 4.5,
+      "reviewCount": 44,
+      "mealType": [
+        "Cena"
+      ]
+    },
+    {
+      "name": "Curry verde tailandés",
+      "ingredients": [
+        "Muslos de pollo, deshuesados ​​y sin piel",
+        "Pasta de curry verde",
+        "Leche de coco",
+        "salsa de pescado",
+        "Azúcar",
+        "Berenjena, en rodajas",
+        "Pimientos morrones, rebanados",
+        "hojas de albahaca",
+        "Arroz jazmín para servir"
+      ],
+      "instructions": [
+        "En una olla, cocine a fuego lento la pasta de curry verde en leche de coco.",
+        "Agrega el pollo, la salsa de pescado y el azúcar. ",
+        "Agregue las berenjenas en rodajas y los pimientos morrones. ",
+        "Adorne con hojas de albahaca fresca.",
+        "¡Sirva caliente sobre arroz jazmín y disfrute de este clásico tailandés!"
+      ],
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 30,
+      "servings": 4,
+      "difficulty": "Medio",
+      "cuisine": "tailandés",
+      "caloriesPerServing": 480,
+      "tags": [
+        "Curry",
+        "tailandés"
+      ],
+      "userId": 153,
+      "image": "https://cdn.dummyjson.com/recipe-images/21.webp",
+      "rating": 4.2,
+      "reviewCount": 18,
+      "mealType": [
+        "Cena"
+      ]
+    },
+    {
+      "name": "Lassi de mango",
+      "ingredients": [
+        "Mango maduro, pelado y cortado en cubitos",
+        "Yogur",
+        "Leche",
+        "Miel",
+        "cardamomo en polvo",
+        "cubitos de hielo"
+      ],
+      "instructions": [
+        "En una licuadora, combine el mango cortado en cubitos, el yogur, la leche, la miel y el cardamomo en polvo.",
+        "Licue hasta que quede suave y cremoso.",
+        "Agrega cubitos de hielo y licúa nuevamente hasta que el lassi esté frío.",
+        "Vierta en vasos y decore con una pizca de cardamomo.",
+        "¡Disfruta de este refrescante Mango Lassi!"
+      ],
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 0,
+      "servings": 2,
+      "difficulty": "Fácil",
+      "cuisine": "indio",
+      "caloriesPerServing": 180,
+      "tags": [
+        "Lassi",
+        "mango",
+        "indio",
+        "pakistaní",
+        "asiático"
+      ],
+      "userId": 76,
+      "image": "https://cdn.dummyjson.com/recipe-images/22.webp",
+      "rating": 4.7,
+      "reviewCount": 15,
+      "mealType": [
+        "Bebida"
+      ]
+    },
+    {
+      "name": "Tiramisú italiano",
+      "ingredients": [
+        "Espresso, preparado y enfriado",
+        "galletas de bizcocho",
+        "queso mascarpone",
+        "crema espesa",
+        "Azúcar",
+        "Cacao en polvo"
+      ],
+      "instructions": [
+        "En un tazón, bata la crema espesa hasta que se formen picos rígidos.",
+        "En otro bol, mezcle el queso mascarpone y el azúcar hasta que quede suave.",
+        "Incorpora suavemente la crema batida a la mezcla de mascarpone.",
+        "Sumerja las galletas bizcocho en el espresso preparado y colóquelas en capas en un plato para servir.",
+        "Extiende una capa de la mezcla de mascarpone sobre las galletas.",
+        "Repita las capas y termine con una capa de cacao en polvo.",
+        "Enfriar en el frigorífico unas horas antes de servir.",
+        "¡Disfruta de la decadencia de este clásico tiramisú italiano!"
+      ],
+      "prepTimeMinutes": 30,
+      "cookTimeMinutes": 0,
+      "servings": 6,
+      "difficulty": "Medio",
+      "cuisine": "italiano",
+      "caloriesPerServing": 350,
+      "tags": [
+        "Tiramisú",
+        "italiano"
+      ],
+      "userId": 130,
+      "image": "https://cdn.dummyjson.com/recipe-images/23.webp",
+      "rating": 4.6,
+      "reviewCount": 0,
+      "mealType": [
+        "Postre"
+      ]
+    },
+    {
+      "name": "Kebabs turcos",
+      "ingredients": [
+        "Cordero o ternera molida",
+        "Cebollas ralladas",
+        "Ajo, picado",
+        "Perejil, finamente picado",
+        "Comino",
+        "Cilantro",
+        "Hojuelas de pimiento rojo",
+        "Sal y pimienta al gusto",
+        "Pan plano para servir",
+        "salsa tahini"
+      ],
+      "instructions": [
+        "En un bol, mezcle la carne molida, la cebolla rallada, el ajo picado, el perejil picado y las especias.",
+        "Forme la mezcla en forma de kebab y cocine a la parrilla hasta que esté completamente cocido.",
+        "Sirva las brochetas sobre pan plano con un chorrito de salsa tahini.",
+        "Disfruta de estos sabrosos kebabs turcos con tus guarniciones favoritas."
+      ],
+      "prepTimeMinutes": 25,
+      "cookTimeMinutes": 15,
+      "servings": 4,
+      "difficulty": "Fácil",
+      "cuisine": "turco",
+      "caloriesPerServing": 280,
+      "tags": [
+        "kebabs",
+        "turco",
+        "Interrogatorio intenso"
+      ],
+      "userId": 26,
+      "image": "https://cdn.dummyjson.com/recipe-images/24.webp",
+      "rating": 4.6,
+      "reviewCount": 78,
+      "mealType": [
+        "Cena"
+      ]
+    },
+    {
+      "name": "Batido de plátano y arándanos",
+      "ingredients": [
+        "Arándanos, frescos o congelados",
+        "Plátano, pelado y rebanado",
+        "yogur griego",
+        "leche de almendras",
+        "Miel",
+        "Semillas de chía (opcional)"
+      ],
+      "instructions": [
+        "En una licuadora, combine los arándanos, el plátano, el yogur griego, la leche de almendras y la miel.",
+        "Licue hasta que quede suave y cremoso.",
+        "Agregue semillas de chía para obtener una nutrición adicional y mezcle brevemente.",
+        "¡Vierte en un vaso y disfruta de este nutritivo batido de arándanos y plátano!"
+      ],
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 0,
+      "servings": 1,
+      "difficulty": "Fácil",
+      "cuisine": "Zalamero",
+      "caloriesPerServing": 220,
+      "tags": [
+        "Zalamero",
+        "Arándano",
+        "Banana"
+      ],
+      "userId": 16,
+      "image": "https://cdn.dummyjson.com/recipe-images/25.webp",
+      "rating": 4.8,
+      "reviewCount": 30,
+      "mealType": [
+        "Desayuno",
+        "Bebida"
+      ]
+    },
+    {
+      "name": "Maíz callejero mexicano (Elote)",
+      "ingredients": [
+        "mazorca de maíz",
+        "Mayonesa",
+        "Queso Cotija, desmoronado",
+        "chile en polvo",
+        "gajos de lima"
+      ],
+      "instructions": [
+        "Ase o ase las mazorcas de maíz hasta que los granos estén carbonizados.",
+        "Unte cada mazorca con mayonesa y luego espolvoree con queso Cotija desmenuzado y chile en polvo.",
+        "Sirva con rodajas de lima para exprimir por encima.",
+        "¡Disfruta de este delicioso y sabroso maíz callejero mexicano!"
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 15,
+      "servings": 4,
+      "difficulty": "Fácil",
+      "cuisine": "mexicano",
+      "caloriesPerServing": 180,
+      "tags": [
+        "elote",
+        "mexicano",
+        "comida callejera"
+      ],
+      "userId": 93,
+      "image": "https://cdn.dummyjson.com/recipe-images/26.webp",
+      "rating": 4.6,
+      "reviewCount": 2,
+      "mealType": [
+        "Bocadillo",
+        "Guarnición"
+      ]
+    },
+    {
+      "name": "Borscht ruso",
+      "ingredients": [
+        "Remolachas, peladas y ralladas",
+        "Repollo, rallado",
+        "Patatas cortadas en cubitos",
+        "Cebollas finamente picadas",
+        "Zanahorias ralladas",
+        "pasta de tomate",
+        "Caldo de carne o de verduras",
+        "Ajo, picado",
+        "hojas de laurel",
+        "Crema agria para servir"
+      ],
+      "instructions": [
+        "En una olla sofreír la cebolla y el ajo picados hasta que se ablanden.",
+        "Agregue la remolacha rallada, el repollo, las papas cortadas en cubitos, las zanahorias ralladas y la pasta de tomate.",
+        "Vierta el caldo y agregue las hojas de laurel. ",
+        "Sirva caliente con una cucharada de crema agria encima.",
+        "¡Disfruta de los abundantes y reconfortantes sabores del Borscht ruso!"
+      ],
+      "prepTimeMinutes": 30,
+      "cookTimeMinutes": 40,
+      "servings": 6,
+      "difficulty": "Medio",
+      "cuisine": "ruso",
+      "caloriesPerServing": 220,
+      "tags": [
+        "Sopa de remolacha",
+        "ruso",
+        "Sopa"
+      ],
+      "userId": 1,
+      "image": "https://cdn.dummyjson.com/recipe-images/27.webp",
+      "rating": 4.3,
+      "reviewCount": 39,
+      "mealType": [
+        "Cena"
+      ]
+    },
+    {
+      "name": "Masala Dosa del sur de la India",
+      "ingredients": [
+        "Masa de dosa (arroz fermentado y masa de urad dal)",
+        "Patatas, hervidas y trituradas",
+        "Cebollas finamente picadas",
+        "Semillas de mostaza",
+        "Semillas de comino",
+        "hojas de curry",
+        "cúrcuma en polvo",
+        "Chiles verdes, picados",
+        "ghee",
+        "Chutney de coco para servir"
+      ],
+      "instructions": [
+        "En una sartén, caliente el ghee y agregue las semillas de mostaza, las semillas de comino y las hojas de curry.",
+        "Agregue las cebollas picadas, los chiles verdes y la cúrcuma en polvo. ",
+        "Incorpora las patatas hervidas y el puré. ",
+        "Extienda la masa de dosa sobre una plancha caliente para hacer panqueques finos.",
+        "Coloca una cucharada de la mezcla de papa en el centro, dobla y sirve caliente.",
+        "Combínelo con chutney de coco para disfrutar de una deliciosa comida del sur de la India."
+      ],
+      "prepTimeMinutes": 40,
+      "cookTimeMinutes": 20,
+      "servings": 4,
+      "difficulty": "Medio",
+      "cuisine": "indio",
+      "caloriesPerServing": 320,
+      "tags": [
+        "dosa",
+        "indio",
+        "asiático"
+      ],
+      "userId": 138,
+      "image": "https://cdn.dummyjson.com/recipe-images/28.webp",
+      "rating": 4.4,
+      "reviewCount": 96,
+      "mealType": [
+        "Desayuno"
+      ]
+    },
+    {
+      "name": "Wrap de falafel libanés",
+      "ingredients": [
+        "bolas de falafel",
+        "Wraps integrales o regulares",
+        "Tomates, cortados en cubitos",
+        "Pepinos, rebanados",
+        "Cebollas moradas, en rodajas finas",
+        "Lechuga, rallada",
+        "salsa tahini",
+        "Perejil fresco, picado"
+      ],
+      "instructions": [
+        "Caliente las bolas de falafel según las instrucciones del paquete.",
+        "Coloque una porción generosa de falafel en el centro de cada envoltura.",
+        "Cubra con tomates cortados en cubitos, pepinos en rodajas, cebollas moradas, lechuga rallada y perejil fresco.",
+        "Rocíe con salsa tahini y envuélvalo bien.",
+        "¡Disfruta de este wrap de falafel libanés lleno de ingredientes frescos y sabrosos!"
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 10,
+      "servings": 2,
+      "difficulty": "Fácil",
+      "cuisine": "libanés",
+      "caloriesPerServing": 400,
+      "tags": [
+        "Falafel",
+        "libanés",
+        "Envoltura"
+      ],
+      "userId": 110,
+      "image": "https://cdn.dummyjson.com/recipe-images/29.webp",
+      "rating": 4.7,
+      "reviewCount": 84,
+      "mealType": [
+        "Almuerzo"
+      ]
+    },
+    {
+      "name": "Caipirinha brasileña",
+      "ingredients": [
+        "Cachaça (aguardiente de caña de azúcar brasileño)",
+        "Lima, cortada en gajos",
+        "Azúcar granulada",
+        "cubitos de hielo"
+      ],
+      "instructions": [
+        "En un vaso, machacar los gajos de lima con el azúcar granulada para que suelte el jugo.",
+        "Llena el vaso con cubitos de hielo.",
+        "Vierta la cachaça sobre el hielo y revuelva bien.",
+        "¡Bebe y disfruta del refrescante sabor de la Caipirinha brasileña!",
+        "Ajuste el azúcar y la lima según sus preferencias de sabor."
+      ],
+      "prepTimeMinutes": 5,
+      "cookTimeMinutes": 0,
+      "servings": 1,
+      "difficulty": "Fácil",
+      "cuisine": "brasileño",
+      "caloriesPerServing": 150,
+      "tags": [
+        "Caipirinha",
+        "brasileño",
+        "Cóctel"
+      ],
+      "userId": 134,
+      "image": "https://cdn.dummyjson.com/recipe-images/30.webp",
+      "rating": 4.4,
+      "reviewCount": 55,
+      "mealType": [
+        "Bebida"
+      ]
+    },
+    {
+      "name": "Patatas Bravas Españolas",
+      "ingredients": [
+        "Patatas cortadas en cubitos",
+        "Aceite de oliva",
+        "Ajo, picado",
+        "pimentón ahumado",
+        "salsa de tomate",
+        "Mayonesa",
+        "salsa picante",
+        "Perejil fresco, picado"
+      ],
+      "instructions": [
+        "Precalienta el horno a 425°F (220°C).",
+        "Mezcle las patatas cortadas en cubitos con aceite de oliva, ajo picado y pimentón ahumado. ",
+        "En una cacerola pequeña, caliente la salsa de tomate, la mayonesa y la salsa picante. ",
+        "Rocíe la salsa sobre las patatas asadas y decore con perejil fresco.",
+        "Sirva estas sabrosas Patatas Bravas españolas como un delicioso aperitivo."
+      ],
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 30,
+      "servings": 4,
+      "difficulty": "Fácil",
+      "cuisine": "Español",
+      "caloriesPerServing": 240,
+      "tags": [
+        "Patatas bravas",
+        "Español"
+      ],
+      "userId": 129,
+      "image": "https://cdn.dummyjson.com/recipe-images/31.webp",
+      "rating": 4.5,
+      "reviewCount": 21,
+      "mealType": [
+        "Aperitivo"
+      ]
+    },
+    {
+      "name": "Rollitos de primavera frescos vietnamitas",
+      "ingredients": [
+        "Envoltorios de papel de arroz",
+        "Camarones, cocidos y rebanados",
+        "Fideos de arroz, cocidos",
+        "hojas de lechuga",
+        "Zanahorias, en juliana",
+        "Pepino, en juliana",
+        "hojas de menta fresca",
+        "Salsa de maní"
+      ],
+      "instructions": [
+        "Sumerja los envoltorios de papel de arroz en agua tibia para que se ablanden.",
+        "Coloque un envoltorio sobre una superficie plana y rellénelo con camarones, fideos de arroz, lechuga, zanahorias, pepino y hojas de menta.",
+        "Doble los lados del envoltorio y enróllelo firmemente para sellar.",
+        "Sirva estos rollitos de primavera frescos vietnamitas con salsa de maní.",
+        "Disfruta de estos ligeros y refrescantes panecillos como un delicioso aperitivo o snack."
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 10,
+      "servings": 4,
+      "difficulty": "Fácil",
+      "cuisine": "vietnamita",
+      "caloriesPerServing": 180,
+      "tags": [
+        "rollitos de primavera",
+        "vietnamita"
+      ],
+      "userId": 113,
+      "image": "https://cdn.dummyjson.com/recipe-images/32.webp",
+      "rating": 4.2,
+      "reviewCount": 97,
+      "mealType": [
+        "Aperitivo"
+      ]
+    },
+    {
+      "name": "Ensalada Mediterránea De Quinua",
+      "ingredients": [
+        "Quinua, cocida",
+        "Tomates cherry, partidos por la mitad",
+        "Pepino, cortado en cubitos",
+        "Aceitunas Kalamata, en rodajas",
+        "Cebolla morada, finamente picada",
+        "Queso feta, desmenuzado",
+        "Perejil fresco, picado",
+        "Aderezo de vinagreta de limón"
+      ],
+      "instructions": [
+        "En un tazón grande, combine la quinua cocida, los tomates cherry, el pepino, las aceitunas, la cebolla morada, el queso feta y el perejil.",
+        "Rocíe con el aderezo de vinagreta de limón y revuelva para combinar.",
+        "Enfriar antes de servir. "
+      ],
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 15,
+      "servings": 6,
+      "difficulty": "Fácil",
+      "cuisine": "mediterráneo",
+      "caloriesPerServing": 220,
+      "tags": [
+        "ensalada de quinua",
+        "mediterráneo"
+      ],
+      "userId": 154,
+      "image": "https://cdn.dummyjson.com/recipe-images/33.webp",
+      "rating": 4.8,
+      "reviewCount": 83,
+      "mealType": [
+        "Almuerzo",
+        "Guarnición"
+      ]
+    },
+    {
+      "name": "Helado japonés de té verde matcha",
+      "ingredients": [
+        "crema espesa",
+        "leche entera",
+        "Azúcar granulada",
+        "Té verde matcha en polvo",
+        "yemas de huevo"
+      ],
+      "instructions": [
+        "En una cacerola, caliente la crema espesa, la leche entera y el azúcar granulada hasta que comience a hervir.",
+        "Incorpora el té verde matcha en polvo hasta que esté completamente combinado.",
+        "En un recipiente aparte, bata las yemas de huevo. ",
+        "Regresa la mezcla a la cacerola y calienta hasta que espese. ",
+        "Cuela la mezcla y déjala enfriar. ",
+        "Congele hasta que esté firme. "
+      ],
+      "prepTimeMinutes": 30,
+      "cookTimeMinutes": 15,
+      "servings": 4,
+      "difficulty": "Medio",
+      "cuisine": "japonés",
+      "caloriesPerServing": 280,
+      "tags": [
+        "helado de matcha",
+        "japonés"
+      ],
+      "userId": 174,
+      "image": "https://cdn.dummyjson.com/recipe-images/34.webp",
+      "rating": 4.2,
+      "reviewCount": 87,
+      "mealType": [
+        "Postre"
+      ]
+    },
+    {
+      "name": "Brigadeiros de chocolate brasileños",
+      "ingredients": [
+        "Leche condensada azucarada",
+        "Cacao en polvo",
+        "mantequilla sin sal",
+        "chispas de chocolate"
+      ],
+      "instructions": [
+        "En una cacerola, combine la leche condensada, el cacao en polvo y la mantequilla sin sal.",
+        "Cocine a fuego medio, revolviendo constantemente, hasta que la mezcla espese y se despegue de la sartén.",
+        "Deja enfriar la mezcla. ",
+        "Cubra los brigadeiros con chispas de chocolate.",
+        "¡Estos Brigadeiros de chocolate brasileños son un dulce delicioso!"
+      ],
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 10,
+      "servings": 8,
+      "difficulty": "Fácil",
+      "cuisine": "brasileño",
+      "caloriesPerServing": 120,
+      "tags": [
+        "Brigadeiros",
+        "brasileño"
+      ],
+      "userId": 175,
+      "image": "https://cdn.dummyjson.com/recipe-images/35.webp",
+      "rating": 4.2,
+      "reviewCount": 65,
+      "mealType": [
+        "Postre"
+      ]
+    },
+    {
+      "name": "Enchiladas De Pollo Mexicanas",
+      "ingredients": [
+        "Pechugas de pollo, cocidas y desmenuzadas",
+        "tortillas de maiz",
+        "salsa para enchiladas",
+        "Frijoles negros, escurridos y enjuagados",
+        "granos de elote",
+        "Mezcla de queso mexicano rallado",
+        "cilantro fresco, picado",
+        "Crema agria para servir"
+      ],
+      "instructions": [
+        "Precalienta el horno a 375°F (190°C).",
+        "En un bol, mezcle el pollo desmenuzado con los frijoles negros, el maíz y el cilantro picado.",
+        "Rellena cada tortilla de maíz con la mezcla de pollo y enrolla bien.",
+        "Coloque las enchiladas enrolladas en una fuente para horno, cúbralas con salsa para enchiladas y espolvoree con queso rallado.",
+        "Hornee hasta que el queso se derrita y burbujee.",
+        "Servir caliente con una cucharada de crema agria. "
+      ],
+      "prepTimeMinutes": 25,
+      "cookTimeMinutes": 20,
+      "servings": 4,
+      "difficulty": "Medio",
+      "cuisine": "mexicano",
+      "caloriesPerServing": 380,
+      "tags": [
+        "enchiladas",
+        "mexicano",
+        "Plato principal"
+      ],
+      "userId": 8,
+      "image": "https://cdn.dummyjson.com/recipe-images/36.webp",
+      "rating": 4.1,
+      "reviewCount": 67,
+      "mealType": [
+        "Cena"
+      ]
+    },
+    {
+      "name": "Curry tailandés de camarones y coco",
+      "ingredients": [
+        "Camarones, pelados y desvenados",
+        "Leche de coco",
+        "Pasta de curry rojo",
+        "salsa de pescado",
+        "Azúcar",
+        "Pimientos morrones, rebanados",
+        "Calabacín, en rodajas",
+        "hojas de albahaca fresca",
+        "Arroz jazmín para servir"
+      ],
+      "instructions": [
+        "En una sartén, cocine a fuego lento la leche de coco con la pasta de curry rojo, la salsa de pescado y el azúcar.",
+        "Agregue los pimientos morrones y el calabacín en rodajas. ",
+        "Agregue los camarones y cocine hasta que se pongan rosados ​​y opacos.",
+        "Agregue las hojas de albahaca fresca.",
+        "Sirva este curry tailandés de camarones y coco sobre arroz jazmín para una comida sabrosa."
+      ],
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 15,
+      "servings": 3,
+      "difficulty": "Medio",
+      "cuisine": "tailandés",
+      "caloriesPerServing": 420,
+      "tags": [
+        "curry de camarones",
+        "tailandés",
+        "Plato principal"
+      ],
+      "userId": 113,
+      "image": "https://cdn.dummyjson.com/recipe-images/37.webp",
+      "rating": 4.9,
+      "reviewCount": 85,
+      "mealType": [
+        "Cena"
+      ]
+    },
+    {
+      "name": "Spanakopita griega",
+      "ingredients": [
+        "masa filo",
+        "Espinacas, picadas y cocidas",
+        "Queso feta, desmenuzado",
+        "Cebollas finamente picadas",
+        "Huevos",
+        "Aceite de oliva",
+        "Eneldo, picado",
+        "Sal y pimienta al gusto"
+      ],
+      "instructions": [
+        "Precalienta el horno a 375°F (190°C).",
+        "En un tazón, mezcle las espinacas cocidas picadas con el queso feta desmenuzado, la cebolla picada, los huevos batidos, el aceite de oliva, el eneldo, la sal y la pimienta.",
+        "Coloque capas de masa filo en una fuente para horno, untando cada capa con aceite de oliva.",
+        "Extienda la mezcla de espinacas y queso feta sobre las capas de masa filo.",
+        "Cubra con más capas de masa filo, untando cada una con aceite de oliva.",
+        "Hornee hasta que esté dorado. "
+      ],
+      "prepTimeMinutes": 30,
+      "cookTimeMinutes": 40,
+      "servings": 8,
+      "difficulty": "Medio",
+      "cuisine": "Griego",
+      "caloriesPerServing": 280,
+      "tags": [
+        "Spanakopita",
+        "Griego"
+      ],
+      "userId": 68,
+      "image": "https://cdn.dummyjson.com/recipe-images/38.webp",
+      "rating": 4.6,
+      "reviewCount": 19,
+      "mealType": [
+        "Aperitivo"
+      ]
+    },
+    {
+      "name": "Ensalada De Cuscús Marroquí",
+      "ingredients": [
+        "Cuscús, cocido",
+        "Garbanzos, cocidos",
+        "Tomates cherry, partidos por la mitad",
+        "Pepino, cortado en cubitos",
+        "Cebolla morada, finamente picada",
+        "Hojas de menta fresca, picadas",
+        "Queso feta, desmenuzado",
+        "Aderezo de vinagreta de limón"
+      ],
+      "instructions": [
+        "En un tazón grande, combine el cuscús cocido, los garbanzos, los tomates cherry, el pepino, la cebolla morada, las hojas de menta y el queso feta desmenuzado.",
+        "Rocíe con el aderezo de vinagreta de limón y revuelva para combinar.",
+        "Enfriar antes de servir. "
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 10,
+      "servings": 6,
+      "difficulty": "Fácil",
+      "cuisine": "marroquí",
+      "caloriesPerServing": 260,
+      "tags": [
+        "ensalada de cuscús",
+        "marroquí"
+      ],
+      "userId": 102,
+      "image": "https://cdn.dummyjson.com/recipe-images/39.webp",
+      "rating": 4.1,
+      "reviewCount": 19,
+      "mealType": [
+        "Almuerzo",
+        "Guarnición"
+      ]
+    },
+    {
+      "name": "Mojito clásico",
+      "ingredients": [
+        "hojas de menta fresca",
+        "Lima, cortada en gajos",
+        "Azúcar granulada",
+        "ron blanco",
+        "refresco",
+        "cubitos de hielo"
+      ],
+      "instructions": [
+        "En un vaso, mezcle hojas de menta fresca con azúcar granulada y rodajas de lima para liberar los sabores.",
+        "Agrega el ron blanco y revuelve bien.",
+        "Llene el vaso con cubitos de hielo y cubra con agua mineral con gas.",
+        "Remueve suavemente y decora con una ramita de menta.",
+        "¡Bebe y disfruta del sabor clásico y refrescante de un Mojito!"
+      ],
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 0,
+      "servings": 1,
+      "difficulty": "Fácil",
+      "cuisine": "Cóctel",
+      "caloriesPerServing": 150,
+      "tags": [
+        "Mojito",
+        "cubano",
+        "Cóctel"
+      ],
+      "userId": 191,
+      "image": "https://cdn.dummyjson.com/recipe-images/40.webp",
+      "rating": 4.7,
+      "reviewCount": 89,
+      "mealType": [
+        "Bebida"
+      ]
+    },
+    {
+      "name": "Bruschetta Caprese",
+      "ingredients": [
+        "baguette, en rodajas",
+        "Tomates, cortados en cubitos",
+        "Mozzarella fresca, en rodajas",
+        "hojas de albahaca fresca",
+        "glaseado balsámico",
+        "Aceite de oliva",
+        "Ajo, picado",
+        "Sal y pimienta al gusto"
+      ],
+      "instructions": [
+        "Precalienta la parrilla del horno.",
+        "Coloque las rebanadas de baguette en una bandeja para hornear y tueste debajo del asador hasta que estén doradas.",
+        "En un tazón, combine los tomates cortados en cubitos, la mozzarella fresca en rodajas, el ajo picado y la albahaca fresca picada.",
+        "Rocíe con aceite de oliva, glaseado balsámico y sazone con sal y pimienta.",
+        "Vierta la mezcla de tomate y mozzarella sobre las rebanadas de baguette tostadas.",
+        "Sirva estas deliciosas Bruschettas Caprese como un aperitivo rápido y sabroso."
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 5,
+      "servings": 6,
+      "difficulty": "Fácil",
+      "cuisine": "italiano",
+      "caloriesPerServing": 150,
+      "tags": [
+        "Brusqueta",
+        "italiano"
+      ],
+      "userId": 148,
+      "image": "https://cdn.dummyjson.com/recipe-images/41.webp",
+      "rating": 4.2,
+      "reviewCount": 38,
+      "mealType": [
+        "Aperitivo"
+      ]
+    },
+    {
+      "name": "Salteado De Pollo Teriyaki",
+      "ingredients": [
+        "Pechuga de pollo, en rodajas finas",
+        "floretes de brócoli",
+        "Pimientos morrones, rebanados",
+        "Zanahorias, en juliana",
+        "Salsa de soja",
+        "salsa teriyaki",
+        "aceite de sésamo",
+        "Ajo, picado",
+        "Jengibre rallado",
+        "Arroz cocido para servir"
+      ],
+      "instructions": [
+        "En un wok o sartén, caliente el aceite de sésamo y saltee el ajo picado y el jengibre rallado hasta que esté fragante.",
+        "Agregue el pollo en rodajas finas y cocine hasta que se dore.",
+        "Agregue los floretes de brócoli, los pimientos morrones en rodajas y las zanahorias cortadas en juliana. ",
+        "Vierta la salsa de soja y la salsa teriyaki sobre el salteado. ",
+        "Sirva este rápido salteado de pollo teriyaki sobre arroz cocido para disfrutar de una comida deliciosa."
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 10,
+      "servings": 4,
+      "difficulty": "Fácil",
+      "cuisine": "japonés",
+      "caloriesPerServing": 320,
+      "tags": [
+        "pollo teriyaki",
+        "japonés",
+        "Salteado"
+      ],
+      "userId": 171,
+      "image": "https://cdn.dummyjson.com/recipe-images/42.webp",
+      "rating": 4.6,
+      "reviewCount": 95,
+      "mealType": [
+        "Cena"
+      ]
+    },
+    {
+      "name": "Salsa De Mango Y Aguacate",
+      "ingredients": [
+        "mango, cortado en cubitos",
+        "Aguacate, cortado en cubitos",
+        "Cebolla morada, finamente picada",
+        "cilantro, picado",
+        "Zumo de lima",
+        "Sal y pimienta al gusto",
+        "Chips de tortilla para servir"
+      ],
+      "instructions": [
+        "En un tazón, combine el mango cortado en cubitos, el aguacate cortado en cubitos, la cebolla morada finamente picada y el cilantro picado.",
+        "Rocíe con jugo de limón fresco y sazone con sal y pimienta. ",
+        "Sirva esta refrescante salsa de mango y aguacate con totopos para un refrigerio rápido y sabroso."
+      ],
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 0,
+      "servings": 4,
+      "difficulty": "Fácil",
+      "cuisine": "mexicano",
+      "caloriesPerServing": 90,
+      "tags": [
+        "salsa de mango",
+        "mexicano"
+      ],
+      "userId": 30,
+      "image": "https://cdn.dummyjson.com/recipe-images/43.webp",
+      "rating": 4.1,
+      "reviewCount": 78,
+      "mealType": [
+        "Bocadillo",
+        "Aperitivo"
+      ]
+    },
+    {
+      "name": "Salteado De Camarones Y Espárragos",
+      "ingredients": [
+        "Camarones, pelados y desvenados",
+        "Espárragos, recortados y cortados en trozos",
+        "Salsa de soja",
+        "aceite de sésamo",
+        "Ajo, picado",
+        "Jengibre rallado",
+        "Hojuelas de pimiento rojo",
+        "Cebollas verdes, en rodajas",
+        "Fideos cocidos o arroz para servir."
+      ],
+      "instructions": [
+        "En un wok o sartén, caliente el aceite de sésamo y saltee el ajo picado, el jengibre rallado y las hojuelas de pimiento rojo hasta que estén fragantes.",
+        "Agregue los camarones y cocine hasta que se pongan rosados ​​y opacos.",
+        "Agregue los trozos de espárragos y cocine hasta que estén tiernos y crujientes.",
+        "Vierta la salsa de soja sobre el salteado y revuelva para combinar.",
+        "Sirva este salteado rápido de camarones y espárragos sobre fideos o arroz cocidos."
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 10,
+      "servings": 3,
+      "difficulty": "Fácil",
+      "cuisine": "asiático",
+      "caloriesPerServing": 250,
+      "tags": [
+        "salteado de camarones",
+        "asiático",
+        "Rápido"
+      ],
+      "userId": 195,
+      "image": "https://cdn.dummyjson.com/recipe-images/44.webp",
+      "rating": 4.7,
+      "reviewCount": 13,
+      "mealType": [
+        "Cena"
+      ]
+    },
+    {
+      "name": "Pizza margarita italiana",
+      "ingredients": [
+        "masa de pizza",
+        "Tomates, en rodajas finas",
+        "Mozzarella fresca, en rodajas",
+        "hojas de albahaca fresca",
+        "Aceite de oliva",
+        "Ajo, picado",
+        "Sal y pimienta al gusto"
+      ],
+      "instructions": [
+        "Precalienta el horno a la temperatura más alta que pueda alcanzar tu horno.",
+        "Extienda la masa de pizza sobre una superficie enharinada y transfiérala a una piedra para pizza o una bandeja para hornear.",
+        "Unte la masa con aceite de oliva y espolvoree ajo picado por la superficie.",
+        "Coloque los tomates en rodajas finas y las rodajas de mozzarella fresca sobre la masa.",
+        "Hornee hasta que la corteza esté dorada y el queso derretido y burbujeante.",
+        "Cubra con hojas de albahaca fresca y sazone con sal y pimienta. "
+      ],
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 12,
+      "servings": 4,
+      "difficulty": "Fácil",
+      "cuisine": "italiano",
+      "caloriesPerServing": 280,
+      "tags": [
+        "pizza margarita",
+        "italiano",
+        "Rápido"
+      ],
+      "userId": 160,
+      "image": "https://cdn.dummyjson.com/recipe-images/45.webp",
+      "rating": 4.7,
+      "reviewCount": 98,
+      "mealType": [
+        "Cena"
+      ]
+    },
+    {
+      "name": "Pasta Al Pesto Con Tomates Cherry",
+      "ingredients": [
+        "pasta penne",
+        "Salsa pesto de albahaca",
+        "Tomates cherry, partidos por la mitad",
+        "Queso parmesano rallado",
+        "Sal y pimienta negra al gusto"
+      ],
+      "instructions": [
+        "Cocine la pasta penne según las instrucciones del paquete. ",
+        "En una sartén, caliente la salsa pesto de albahaca. ",
+        "Agregue los tomates cherry cortados por la mitad y cocine hasta que se ablanden un poco.",
+        "Sazone con sal y pimienta negra al gusto. ",
+        "Sirva esta rápida y sabrosa pasta al pesto con tomates cherry para una comida deliciosa."
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 10,
+      "servings": 3,
+      "difficulty": "Fácil",
+      "cuisine": "italiano",
+      "caloriesPerServing": 320,
+      "tags": [
+        "pasta al pesto",
+        "italiano",
+        "Rápido"
+      ],
+      "userId": 79,
+      "image": "https://cdn.dummyjson.com/recipe-images/46.webp",
+      "rating": 4.3,
+      "reviewCount": 54,
+      "mealType": [
+        "Cena"
+      ]
+    },
+    {
+      "name": "Brochetas De Pollo Hawaianas",
+      "ingredients": [
+        "Pechugas de pollo, cortadas en trozos",
+        "Trozos de piña",
+        "Pimientos morrones, rebanados",
+        "Cebolla morada, cortada en gajos",
+        "Salsa de soja",
+        "jugo de piña",
+        "Ketchup",
+        "Azúcar moreno",
+        "Ajo, picado",
+        "Brochetas de madera remojadas en agua."
+      ],
+      "instructions": [
+        "Precalienta la parrilla o la sartén.",
+        "En un tazón, mezcle la salsa de soja, el jugo de piña, el ketchup, el azúcar moreno y el ajo picado para hacer la marinada.",
+        "Ensarte trozos de pollo, trozos de piña, rodajas de pimiento morrón y gajos de cebolla morada en brochetas de madera empapadas.",
+        "Unte las brochetas con la marinada y cocine a la parrilla hasta que el pollo esté bien cocido.",
+        "Sirva estas brochetas de pollo hawaianas con arroz o como un sabroso aperitivo."
+      ],
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 15,
+      "servings": 4,
+      "difficulty": "Fácil",
+      "cuisine": "hawaiano",
+      "caloriesPerServing": 280,
+      "tags": [
+        "brochetas de pollo",
+        "hawaiano",
+        "Rápido"
+      ],
+      "userId": 177,
+      "image": "https://cdn.dummyjson.com/recipe-images/47.webp",
+      "rating": 4.7,
+      "reviewCount": 77,
+      "mealType": [
+        "Cena"
+      ]
+    },
+    {
+      "name": "Rollitos De Pepino Y Aguacate",
+      "ingredients": [
+        "Arroz para sushi, sazonado",
+        "Hojas de nori",
+        "Pepino, en juliana",
+        "aguacate, en rodajas",
+        "Salsa de soja para mojar",
+        "Jengibre encurtido y wasabi para servir"
+      ],
+      "instructions": [
+        "Coloque una hoja de nori sobre una estera de bambú para enrollar sushi.",
+        "Extienda el arroz para sushi sazonado de manera uniforme sobre el nori, dejando un pequeño borde en la parte superior.",
+        "Coloque el pepino en juliana y el aguacate en rodajas a lo largo del borde inferior del arroz.",
+        "Enrolla el nori firmemente desde abajo, usando la estera de bambú para darle forma al rollo.",
+        "Corta el rollo en trozos pequeños. "
+      ],
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 0,
+      "servings": 3,
+      "difficulty": "Fácil",
+      "cuisine": "japonés",
+      "caloriesPerServing": 180,
+      "tags": [
+        "rollos de sushi",
+        "japonés",
+        "Rápido"
+      ],
+      "userId": 190,
+      "image": "https://cdn.dummyjson.com/recipe-images/48.webp",
+      "rating": 4.3,
+      "reviewCount": 94,
+      "mealType": [
+        "Aperitivo",
+        "Almuerzo"
+      ]
+    },
+    {
+      "name": "Ensalada Mediterránea De Garbanzos",
+      "ingredients": [
+        "Garbanzos enlatados, escurridos y enjuagados",
+        "Tomates cherry, partidos por la mitad",
+        "Pepino, cortado en cubitos",
+        "Cebolla morada, finamente picada",
+        "Aceitunas Kalamata, en rodajas",
+        "Queso feta, desmenuzado",
+        "Aceite de oliva",
+        "Zumo de limón",
+        "orégano seco",
+        "Sal y pimienta al gusto"
+      ],
+      "instructions": [
+        "En un tazón grande, combine los garbanzos, los tomates cherry, el pepino, la cebolla morada, las aceitunas y el queso feta.",
+        "En un tazón pequeño, mezcle el aceite de oliva, el jugo de limón, el orégano seco, la sal y la pimienta para hacer el aderezo.",
+        "Vierta el aderezo sobre la ensalada y revuelva suavemente para combinar.",
+        "Enfriar antes de servir. "
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 0,
+      "servings": 4,
+      "difficulty": "Fácil",
+      "cuisine": "mediterráneo",
+      "caloriesPerServing": 220,
+      "tags": [
+        "Ensalada de garbanzos",
+        "mediterráneo",
+        "Rápido"
+      ],
+      "userId": 183,
+      "image": "https://cdn.dummyjson.com/recipe-images/49.webp",
+      "rating": 4.7,
+      "reviewCount": 70,
+      "mealType": [
+        "Almuerzo",
+        "Guarnición"
+      ]
+    },
+    {
+      "name": "Batido de piña y coco",
+      "ingredients": [
+        "Trozos de piña, frescos o congelados",
+        "Leche de coco",
+        "yogur griego",
+        "Plátano, pelado y rebanado",
+        "Miel",
+        "cubitos de hielo"
+      ],
+      "instructions": [
+        "En una licuadora, combine los trozos de piña, la leche de coco, el yogur griego, el plátano y la miel.",
+        "Licue hasta que quede suave y cremoso.",
+        "Agrega cubitos de hielo y vuelve a licuar hasta que el batido esté frío.",
+        "¡Vierte en un vaso y disfruta de las bondades tropicales de este batido de piña y coco!"
+      ],
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 0,
+      "servings": 2,
+      "difficulty": "Fácil",
+      "cuisine": "Zalamero",
+      "caloriesPerServing": 200,
+      "tags": [
+        "Zalamero",
+        "Piña",
+        "Coco"
+      ],
+      "userId": 172,
+      "image": "https://cdn.dummyjson.com/recipe-images/50.webp",
+      "rating": 4.4,
+      "reviewCount": 45,
+      "mealType": [
+        "Desayuno",
+        "Bebida"
+      ]
+    }
+  ]
+}

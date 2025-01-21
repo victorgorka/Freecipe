@@ -40,5 +40,10 @@ public class SecurityConfiguration {
         return (web) -> web.ignoring().requestMatchers(new AntPathRequestMatcher("/users/**"));
     }
 
+    @Bean
+    public WebSecurityCustomizer webSecurityCustomizer5() {
+        return (web) -> web.ignoring().requestMatchers(new AntPathRequestMatcher("/api/**"));
+    }
+
 
 }
