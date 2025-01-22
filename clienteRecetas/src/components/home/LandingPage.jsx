@@ -37,7 +37,7 @@ const LandingPage = () => {
         </div>
       </main> */}
     <div className="video-container">
-      <video controls>
+      <video controls loop>
         <source src="../assets/video.mp4" type="video/mp4" />
         Tu navegador no soporta la etiqueta de video.
       </video>
