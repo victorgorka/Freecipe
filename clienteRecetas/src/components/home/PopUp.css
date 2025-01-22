@@ -1,0 +1,28 @@
+.ModalHeader{
+    padding: 0px !important;
+  }
+  
+  .ModalFooter{
+    background-color: black !important;
+    opacity: 0.8 !important; 
+    
+  }
+  .imagen {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto;
+  }
+  
+  div{
+    display: inline;
+    color: black;
+  }
+  
+  .titulo{
+    display: block;
+    color: #a8975e;
+    text-transform: uppercase; 
+    text-decoration: underline; 
+    text-decoration-color: white; 
+  }
