@@ -84,9 +84,8 @@ function SearchContainer({onSearch}) {
 
   return (
     <div>
-      <button className="link">
-        <Link to="/" >LOGO</Link>
-      <img src=""></img>
+      <button to="/" className="link">
+      <img src="../../../../Design/Web-12.png"></img>
       </button>
       <div className="search-container">
         

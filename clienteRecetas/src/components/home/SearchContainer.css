@@ -9,10 +9,8 @@
 	top: 20px;
 }
 .link{	
-	left:5px;
-	/* position:sticky;
-
-	top:5px; */
+	max-width: 100px;
+    right: 5%;
 }
 .botonR{
 	border: 2px solid rgb(109, 107, 107) !important;
