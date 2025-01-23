@@ -28,24 +28,37 @@ public class RecipeLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        try (InputStream inputStream = new ClassPathResource("recipesTraducido.json").getInputStream()) {
-            ObjectMapper objectMapper = new ObjectMapper();
-            RecipeResponse response = objectMapper.readValue(inputStream, RecipeResponse.class);
+        if (recipeRepository.count() == 0) { // Only load data if the database is empty
+            try (InputStream inputStream = new ClassPathResource("recipesTraducido.json").getInputStream()) {
+                ObjectMapper objectMapper = new ObjectMapper();
+                RecipeResponse response = objectMapper.readValue(inputStream, RecipeResponse.class);
 
-            for (Recipe recipe : response.getRecipes()) {
-                List<Ingredient> savedIngredients = new ArrayList<>();
+                for (Recipe recipe : response.getRecipes()) {
+                    List<Ingredient> savedIngredients = new ArrayList<>();
 
-                for (Ingredient ingredient : recipe.getIngredients()) {
-                    Optional<Ingredient> existingIngredientOpt = ingredientRepository.findByName(ingredient.getName());
-                    Ingredient savedIngredient = existingIngredientOpt.orElseGet(() -> ingredientRepository.save(ingredient));
-                    savedIngredients.add(savedIngredient);
+                    for (Ingredient ingredient : recipe.getIngredients()) {
+                        // Check if the ingredient already exists in the database
+                        Optional<Ingredient> existingIngredientOpt = ingredientRepository.findByName(ingredient.getName());
+
+                        Ingredient savedIngredient;
+                        if (existingIngredientOpt.isPresent()) {
+                            // Use the existing ingredient
+                            savedIngredient = existingIngredientOpt.get();
+                        } else {
+                            // Merge the new ingredient (insert or update)
+                            savedIngredient = ingredientRepository.save(ingredient);
+                        }
+                        savedIngredients.add(savedIngredient);
+                    }
+
+                    recipe.setIngredients(savedIngredients);
+                    recipeRepository.save(recipe);
                 }
-
-                recipe.setIngredients(savedIngredients);
-                recipeRepository.save(recipe);
+            } catch (IOException e) {
+                throw new RuntimeException("Error reading recipes file", e);
             }
-        } catch (IOException e) {
-            throw new RuntimeException("Error reading recipes file", e);
+        } else {
+            System.out.println("Database already contains data. Skipping data loading.");
         }
     }
 }

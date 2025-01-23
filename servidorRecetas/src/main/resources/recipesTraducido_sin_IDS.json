@@ -1,6 +1,7 @@
 {
   "recipes": [
     {
+      "id": 1,
       "name": "Pizza margarita clásica",
       "ingredients": [
         "masa de pizza",
@@ -37,6 +38,7 @@
       ]
     },
     {
+      "id": 2,
       "name": "Salteado Vegetariano",
       "ingredients": [
         "Tofu, en cubitos",
@@ -77,6 +79,7 @@
       ]
     },
     {
+      "id": 3,
       "name": "Galletas con chispas de chocolate",
       "ingredients": [
         "Harina para todo uso",
@@ -120,6 +123,7 @@
       ]
     },
     {
+      "id": 4,
       "name": "Pasta Alfredo con Pollo",
       "ingredients": [
         "pasta fetuccini",
@@ -160,6 +164,7 @@
       ]
     },
     {
+      "id": 5,
       "name": "Pollo Con Salsa De Mango",
       "ingredients": [
         "muslos de pollo",
@@ -197,6 +202,7 @@
       ]
     },
     {
+      "id": 6,
       "name": "Ensalada De Quinua Con Aguacate",
       "ingredients": [
         "Quinua, cocida",
@@ -234,6 +240,7 @@
       ]
     },
     {
+      "id": 7,
       "name": "Bruschetta de tomate y albahaca",
       "ingredients": [
         "baguette, en rodajas",
@@ -271,6 +278,7 @@
       ]
     },
     {
+      "id": 8,
       "name": "Salteado de carne y brócoli",
       "ingredients": [
         "Solomillo de ternera, en rodajas finas",
@@ -311,6 +319,7 @@
       ]
     },
     {
+      "id": 9,
       "name": "Ensalada Caprese",
       "ingredients": [
         "Tomates, rebanados",
@@ -346,6 +355,7 @@
       ]
     },
     {
+      "id": 10,
       "name": "Pasta con gambas y gambas",
       "ingredients": [
         "pasta linguini",
@@ -385,6 +395,7 @@
       ]
     },
     {
+      "id": 11,
       "name": "Pollo Biryani",
       "ingredients": [
         "arroz basmati",
@@ -432,6 +443,7 @@
       ]
     },
     {
+      "id": 12,
       "name": "Pollo Karahi",
       "ingredients": [
         "Pollo, cortado en trozos",
@@ -478,6 +490,7 @@
       ]
     },
     {
+      "id": 13,
       "name": "Alo Keema",
       "ingredients": [
         "Carne molida",
@@ -524,6 +537,7 @@
       ]
     },
     {
+      "id": 14,
       "name": "Kebabs Chapli",
       "ingredients": [
         "Carne molida",
@@ -571,6 +585,7 @@
       ]
     },
     {
+      "id": 15,
       "name": "Saag (espinacas) con Makki di Roti",
       "ingredients": [
         "Hojas de mostaza, lavadas y picadas",
@@ -615,6 +630,7 @@
       ]
     },
     {
+      "id": 16,
       "name": "Sopa De Ramen Japonesa",
       "ingredients": [
         "fideos ramen",
@@ -658,6 +674,7 @@
       ]
     },
     {
+      "id": 17,
       "name": "Tagine marroquí de garbanzos",
       "ingredients": [
         "Garbanzos, cocidos",
@@ -701,6 +718,7 @@
       ]
     },
     {
+      "id": 18,
       "name": "bibimbap coreano",
       "ingredients": [
         "arroz blanco cocido",
@@ -742,6 +760,7 @@
       ]
     },
     {
+      "id": 19,
       "name": "Musaca griega",
       "ingredients": [
         "Berenjenas, en rodajas",
@@ -789,6 +808,7 @@
       ]
     },
     {
+      "id": 20,
       "name": "Pollo Con Mantequilla (Murgh Makhani)",
       "ingredients": [
         "Muslos de pollo, deshuesados ​​y sin piel",
@@ -832,6 +852,7 @@
       ]
     },
     {
+      "id": 21,
       "name": "Curry verde tailandés",
       "ingredients": [
         "Muslos de pollo, deshuesados ​​y sin piel",
@@ -870,6 +891,7 @@
       ]
     },
     {
+      "id": 22,
       "name": "Lassi de mango",
       "ingredients": [
         "Mango maduro, pelado y cortado en cubitos",
@@ -908,6 +930,7 @@
       ]
     },
     {
+      "id": 23,
       "name": "Tiramisú italiano",
       "ingredients": [
         "Espresso, preparado y enfriado",
@@ -946,6 +969,7 @@
       ]
     },
     {
+      "id": 24,
       "name": "Kebabs turcos",
       "ingredients": [
         "Cordero o ternera molida",
@@ -985,6 +1009,7 @@
       ]
     },
     {
+      "id": 25,
       "name": "Batido de plátano y arándanos",
       "ingredients": [
         "Arándanos, frescos o congelados",
@@ -1021,6 +1046,7 @@
       ]
     },
     {
+      "id": 26,
       "name": "Maíz callejero mexicano (Elote)",
       "ingredients": [
         "mazorca de maíz",
@@ -1056,6 +1082,7 @@
       ]
     },
     {
+      "id": 27,
       "name": "Borscht ruso",
       "ingredients": [
         "Remolachas, peladas y ralladas",
@@ -1096,6 +1123,7 @@
       ]
     },
     {
+      "id": 28,
       "name": "Masala Dosa del sur de la India",
       "ingredients": [
         "Masa de dosa (arroz fermentado y masa de urad dal)",
@@ -1137,6 +1165,7 @@
       ]
     },
     {
+      "id": 29,
       "name": "Wrap de falafel libanés",
       "ingredients": [
         "bolas de falafel",
@@ -1175,6 +1204,7 @@
       ]
     },
     {
+      "id": 30,
       "name": "Caipirinha brasileña",
       "ingredients": [
         "Cachaça (aguardiente de caña de azúcar brasileño)",
@@ -1209,6 +1239,7 @@
       ]
     },
     {
+      "id": 31,
       "name": "Patatas Bravas Españolas",
       "ingredients": [
         "Patatas cortadas en cubitos",
@@ -1246,6 +1277,7 @@
       ]
     },
     {
+      "id": 32,
       "name": "Rollitos de primavera frescos vietnamitas",
       "ingredients": [
         "Envoltorios de papel de arroz",
@@ -1283,6 +1315,7 @@
       ]
     },
     {
+      "id": 33,
       "name": "Ensalada Mediterránea De Quinua",
       "ingredients": [
         "Quinua, cocida",
@@ -1319,6 +1352,7 @@
       ]
     },
     {
+      "id": 34,
       "name": "Helado japonés de té verde matcha",
       "ingredients": [
         "crema espesa",
@@ -1354,6 +1388,7 @@
       ]
     },
     {
+      "id": 35,
       "name": "Brigadeiros de chocolate brasileños",
       "ingredients": [
         "Leche condensada azucarada",
@@ -1387,6 +1422,7 @@
       ]
     },
     {
+      "id": 36,
       "name": "Enchiladas De Pollo Mexicanas",
       "ingredients": [
         "Pechugas de pollo, cocidas y desmenuzadas",
@@ -1426,6 +1462,7 @@
       ]
     },
     {
+      "id": 37,
       "name": "Curry tailandés de camarones y coco",
       "ingredients": [
         "Camarones, pelados y desvenados",
@@ -1465,6 +1502,7 @@
       ]
     },
     {
+      "id": 38,
       "name": "Spanakopita griega",
       "ingredients": [
         "masa filo",
@@ -1503,6 +1541,7 @@
       ]
     },
     {
+      "id": 39,
       "name": "Ensalada De Cuscús Marroquí",
       "ingredients": [
         "Cuscús, cocido",
@@ -1539,6 +1578,7 @@
       ]
     },
     {
+      "id": 40,
       "name": "Mojito clásico",
       "ingredients": [
         "hojas de menta fresca",
@@ -1575,6 +1615,7 @@
       ]
     },
     {
+      "id": 41,
       "name": "Bruschetta Caprese",
       "ingredients": [
         "baguette, en rodajas",
@@ -1613,6 +1654,7 @@
       ]
     },
     {
+      "id": 42,
       "name": "Salteado De Pollo Teriyaki",
       "ingredients": [
         "Pechuga de pollo, en rodajas finas",
@@ -1653,6 +1695,7 @@
       ]
     },
     {
+      "id": 43,
       "name": "Salsa De Mango Y Aguacate",
       "ingredients": [
         "mango, cortado en cubitos",
@@ -1688,6 +1731,7 @@
       ]
     },
     {
+      "id": 44,
       "name": "Salteado De Camarones Y Espárragos",
       "ingredients": [
         "Camarones, pelados y desvenados",
@@ -1727,6 +1771,7 @@
       ]
     },
     {
+      "id": 45,
       "name": "Pizza margarita italiana",
       "ingredients": [
         "masa de pizza",
@@ -1765,6 +1810,7 @@
       ]
     },
     {
+      "id": 46,
       "name": "Pasta Al Pesto Con Tomates Cherry",
       "ingredients": [
         "pasta penne",
@@ -1800,6 +1846,7 @@
       ]
     },
     {
+      "id": 47,
       "name": "Brochetas De Pollo Hawaianas",
       "ingredients": [
         "Pechugas de pollo, cortadas en trozos",
@@ -1840,6 +1887,7 @@
       ]
     },
     {
+      "id": 48,
       "name": "Rollitos De Pepino Y Aguacate",
       "ingredients": [
         "Arroz para sushi, sazonado",
@@ -1877,6 +1925,7 @@
       ]
     },
     {
+      "id": 49,
       "name": "Ensalada Mediterránea De Garbanzos",
       "ingredients": [
         "Garbanzos enlatados, escurridos y enjuagados",
@@ -1917,6 +1966,7 @@
       ]
     },
     {
+      "id": 50,
       "name": "Batido de piña y coco",
       "ingredients": [
         "Trozos de piña, frescos o congelados",
