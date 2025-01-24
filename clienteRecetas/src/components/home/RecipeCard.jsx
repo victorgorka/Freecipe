@@ -4,10 +4,10 @@ import PopUp from './PopUp.jsx'
 
 const RecipeCard = ({ result }) => {
   return (
-    <div className="card" style={{ width: '18rem' }}>
-      <img src={result.image} className="card-img-top" alt={result.name} />
+    <div className="card" >
+      <img src={result.image} className="image" alt={result.name} />
       <div className="card-body">
-        <h5 className="card-title">{result.name}</h5>
+        <h5 className="title">{result.name}</h5>
         <PopUp result={result} /> 
       </div>
     </div>

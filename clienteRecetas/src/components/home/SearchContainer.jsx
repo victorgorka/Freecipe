@@ -46,14 +46,19 @@ function SearchContainer({ onSearch }) {
 
   const fetchRecipesByIngredients = () => {
     if (ingredients.length === 0) {
-      console.log("No ingredients selected. Please select some ingredients before searching.");
+      console.log(
+        "No ingredients selected. Please select some ingredients before searching."
+      );
       return; // Exit the function if no ingredients are selected
     }
 
     const queryParams = ingredients
       .map((ingredient) => `ingredients=${encodeURIComponent(ingredient)}`)
       .join("&");
-    const url = `http://localhost:8080/recipes/byIngredients?${queryParams}` + "&flexible=" + isChecked;
+    const url =
+      `http://localhost:8080/recipes/byIngredients?${queryParams}` +
+      "&flexible=" +
+      isChecked;
 
     onSearch(url);
 
@@ -74,6 +79,9 @@ function SearchContainer({ onSearch }) {
 
   return (
     <div>
+      <button to="/" className="link">
+        <img src="../../../../Design/Web-12.png"></img>
+      </button>
       <div className="search-container">
         <div className="search-filter">
           <form
@@ -98,7 +106,11 @@ function SearchContainer({ onSearch }) {
               </label>
             </div>
             <Form.Label>Tiempo: {rangeValue} minutos</Form.Label>
-            <Form.Range max={120} value={rangeValue} onChange={handleRangeChange} />
+            <Form.Range
+              max={120}
+              value={rangeValue}
+              onChange={handleRangeChange}
+            />
 
             {/* Autocomplete Input for Ingredients */}
             <div className="autocomplete-container">
@@ -122,6 +134,33 @@ function SearchContainer({ onSearch }) {
                 </ul>
               )}
             </div>
+
+            <Form.Label className="tiempo">
+              Tiempo: {rangeValue} minutos
+            </Form.Label>
+            <Form.Range
+              className="tiempo"
+              max={120}
+              value={rangeValue}
+              onChange={handleRangeChange}
+            />
+
+            {/* Ingredient selection dropdown */}
+            <select
+              value={ingredientId}
+              onChange={handleIngredientChange}
+              className="custom-placeholder"
+            >
+              <option value="">Selecciona un ingrediente</option>
+              {availableIngredients.map((ing) => (
+                <option key={ing.id} value={ing.id}>
+                  {ing.name}
+                </option>
+              ))}
+            </select>
+            <button type="submit" disabled={!ingredientId}>
+              Añadir Ingrediente
+            </button>
           </form>
 
           <div className="submitted-ingredients">
@@ -134,7 +173,7 @@ function SearchContainer({ onSearch }) {
           </div>
 
           <br />
-          <button type="button" onClick={fetchRecipesByIngredients}>
+          <button onClick={fetchRecipesByIngredients} className="botonR">
             Recomendar
           </button>
         </div>
