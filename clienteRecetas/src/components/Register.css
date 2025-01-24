@@ -104,6 +104,32 @@ section {
   margin-right: 2px;
 }
 
+/* Add shadow to input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  border: 1px solid #ccc; /* Optional: Add a border */
+  border-radius: 4px; /* Optional: Add rounded corners */
+  padding: 0.5rem; /* Optional: Add padding */
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Add shadow on focus (when the input is clicked) */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Larger shadow on focus */
+  outline: none; /* Remove the default browser outline */
+}
+
+/* Optional: Add shadow on hover */
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+}
+
 
 
 .text-decoration-none:hover{
