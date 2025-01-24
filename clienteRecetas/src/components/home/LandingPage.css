@@ -1,8 +1,8 @@
-body {
+/* body {
 	background-image: url('../assets/mainP-01.png');
 	background-size: contain;
 	background-position: center;
-}
+} */
 
 /* Main layout using Flexbox */
 .landing-page {

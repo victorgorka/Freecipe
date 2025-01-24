@@ -1,0 +1,112 @@
+.gradient-custom-3 {
+    /* fallback for old browsers */
+    background: #84fab0;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(211, 221, 15, 0.5), rgba(143, 211, 244, 0.5));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(161, 169, 13, 0.5), rgba(143, 211, 244, 0.5));
+  }
+  
+  .gradient-custom-4 {
+    /* fallback for old browsers */
+    background: #84fab0;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgb(199, 231, 16), rgb(192, 223, 17));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgb(225, 222, 5), rgb(186, 226, 9));
+  }
+  
+  /* Make the container wider */
+  .wider-container {
+    max-width: 1200px; /* Adjust this value as needed */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  /* Make the card wider */
+  .wider-card {
+    max-width: 800px; /* Adjust this value as needed */
+    margin: 0 auto; /* Center the card */
+  }
+  
+  /* Ensure the form inputs take up full width */
+  .wider-card .form-control {
+    width: 100%;
+  }
+
+
+.registerComponent .container {
+  max-width: 100%; /* Ensure the container takes full width */
+}
+
+.registerComponent .card {
+  max-width: 800px; /* Adjust card width as needed */
+  margin: 0 auto; /* Center the card */
+}
+
+section, .card, .form-control {
+  box-sizing: content-box; /* Revert to default behavior */
+}
+
+/* In your Register.module.css or global CSS */
+section {
+  padding: 0; /* Remove padding */
+}
+
+.card {
+  width: 100%; /* Ensure card takes full width */
+  padding: 0; /* Remove padding */
+}
+
+.form-control {
+  width: 100%; /* Ensure inputs take full width */
+  margin-top: 0.25rem;
+}
+
+section {
+  flex: 1; /* Expand to fill available space */
+  width: 100%; /* Ensure full width */
+}
+
+.form-label {
+  display: block; /* Ensure the label is on its own line */
+  margin-bottom: 0.5rem; /* Add space below the label */
+  font-weight: bold; /* Optional: Make labels bold */
+}
+
+
+.widerForm {
+  width: 100%; /* Ensure full width */
+  max-width: 100%; /* Prevent any max-width restrictions */
+  padding: 0; /* Remove padding */
+}
+
+.widerForm .card {
+  width: 100%; /* Ensure card takes full width */
+  padding: 0; /* Remove padding */
+}
+
+.widerForm .form-control {
+  width: 100%; /* Ensure inputs take full width */
+}
+
+.home-link {
+  display: flex; /* Use Flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: flex-start;
+  gap: 0.5rem; /* Add space between icon and text */
+  color: inherit; /* Inherit the text color */
+  text-decoration: none; /* Remove underline */
+  margin-bottom: 1rem; 
+  margin-right: 2px;
+}
+
+
+
+.text-decoration-none:hover{
+  color: #a8975e; /* Ensure color doesn't change on hover */
+  opacity: 1;
+}

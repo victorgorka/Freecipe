@@ -19,7 +19,7 @@ axiosInstance.interceptors.request.use(
     }
 );
 
-// Add a response interceptor (optional)
+
 axiosInstance.interceptors.response.use(
     (response) => {
         return response; // Handle successful responses
