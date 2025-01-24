@@ -14,6 +14,8 @@ function Home() {
   const [searchResults, setSearchResults] = useState([]);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [userName, setUserName] = useState(""); // Optional, for displaying user's name
+  const [currentPage, setCurrentPage] = useState(1); // Track the current page
+  const [itemsPerPage] = useState(4); // Number of items to display per page
   const navigate = useNavigate();
 
   // Check for token on mount
@@ -64,6 +66,7 @@ function Home() {
       const response = await fetch(url);
       const data = await response.json();
       setSearchResults(data);
+      setCurrentPage(1); // Reset to the first page after a new search
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -74,6 +77,19 @@ function Home() {
     setIsLoggedIn(false); // Update logged-in state
     setUserName(""); // Clear user data
     navigate("/login"); // Redirect to login page
+  };
+
+  // Calculate the index of the first and last item on the current page
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = searchResults.slice(indexOfFirstItem, indexOfLastItem);
+
+  // Calculate the total number of pages
+  const totalPages = Math.ceil(searchResults.length / itemsPerPage);
+
+  // Handle page changes
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
   };
 
   return (
@@ -128,11 +144,45 @@ function Home() {
           <SearchContainer onSearch={handleSearch} />
         </Col>
         <Col>
-          <SearchResults results={searchResults} />
+          <SearchResults results={currentItems} />
         </Col>
       </Row>
+
+      {/* Pagination Controls */}
+      {searchResults.length > itemsPerPage && (
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={handlePageChange}
+        />
+      )}
     </Container>
   );
 }
+
+// Pagination Component
+const Pagination = ({ currentPage, totalPages, onPageChange }) => {
+  return (
+    <div className="d-flex justify-content-center mt-4">
+      <button
+        className="btn btn-outline-primary mx-1"
+        onClick={() => onPageChange(currentPage - 1)}
+        disabled={currentPage === 1}
+      >
+        Anterior
+      </button>
+      <span className="mx-3 align-self-center">
+        Página {currentPage} de {totalPages}
+      </span>
+      <button
+        className="btn btn-outline-primary mx-1"
+        onClick={() => onPageChange(currentPage + 1)}
+        disabled={currentPage === totalPages}
+      >
+        Siguiente
+      </button>
+    </div>
+  );
+};
 
 export default Home;
