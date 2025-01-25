@@ -53,12 +53,14 @@ function SearchContainer({ onSearch }) {
     }
 
     const queryParams = ingredients
-      .map((ingredient) => `ingredients=${encodeURIComponent(ingredient)}`)
-      .join("&");
-    const url =
-      `http://localhost:8080/recipes/byIngredients?${queryParams}` +
-      "&flexible=" +
-      isChecked;
+    .map((ingredient) => `ingredients=${encodeURIComponent(ingredient)}`)
+    .join("&");
+const url =
+    `http://localhost:8080/recipes/byIngredients?${queryParams}` +
+    "&flexible=" +
+    isChecked +
+    "&maxTime=" +
+    rangeValue;
 
     onSearch(url);
 

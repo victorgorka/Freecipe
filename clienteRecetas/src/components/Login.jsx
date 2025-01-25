@@ -40,7 +40,7 @@ const Login = () => {
   };
 
   return (
-    <section className="vh-100 bg-image login-component widerForm"> {/* Unique class */}
+    <section className="vh-100 bg-image login-component widerForm section1"> {/* Unique class */}
       <div className="mask d-flex align-items-center h-100 gradient-custom-3">
         <div className="container h-100">
           <div className="row d-flex justify-content-center align-items-center h-100">

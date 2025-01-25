@@ -52,8 +52,10 @@ section, .card, .form-control {
 }
 
 /* In your Register.module.css or global CSS */
-section {
+.section1 {
   padding: 0; /* Remove padding */
+  flex: 1; /* Expand to fill available space */
+  width: 100%; /* Ensure full width */
 }
 
 .card {
@@ -64,11 +66,6 @@ section {
 .form-control {
   width: 100%; /* Ensure inputs take full width */
   margin-top: 0.25rem;
-}
-
-section {
-  flex: 1; /* Expand to fill available space */
-  width: 100%; /* Ensure full width */
 }
 
 .form-label {

@@ -67,12 +67,14 @@ public class RecipeByIngredient {
     //############################## BUSQUEDA ##############################################
 
     @GetMapping("/byIngredients")
-    public List<Recipe> getRecipesByIngredients(@RequestParam List<String> ingredients,@RequestParam boolean flexible) {
+    public List<Recipe> getRecipesByIngredients(@RequestParam List<String> ingredients,
+                                                @RequestParam boolean flexible,
+                                                @RequestParam int maxTime) { // Added maxTime parameter
         long ingredientsCount = ingredients.size();
         if (flexible) {
-            return recipeRepository.findRecipesByIngredientsFlexible(ingredients, ingredientsCount);
+            return recipeRepository.findRecipesByIngredientsFlexible(ingredients, ingredientsCount, maxTime);
         } else {
-            return recipeRepository.findRecipesByIngredients(ingredients, ingredientsCount);
+            return recipeRepository.findRecipesByIngredients(ingredients, ingredientsCount, maxTime);
         }
     }
 

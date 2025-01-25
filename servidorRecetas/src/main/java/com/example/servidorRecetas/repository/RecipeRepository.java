@@ -16,6 +16,7 @@ public interface RecipeRepository extends JpaRepository<Recipe, Long> {
             "JOIN recipe_ingredient ri ON r.id = ri.recipe_id " +
             "JOIN ingredient i ON ri.ingredient_id = i.id " +
             "WHERE i.name IN :ingredients " +
+            "AND (r.prep_time_minutes + r.cook_time_minutes) <= :maxTime " + // Combined time condition
             "AND r.id NOT IN (" +
             "    SELECT r2.id " +
             "    FROM recipe r2 " +
@@ -27,16 +28,19 @@ public interface RecipeRepository extends JpaRepository<Recipe, Long> {
             "HAVING COUNT(DISTINCT i.name) <= :ingredientsCount",
             nativeQuery = true)
     List<Recipe> findRecipesByIngredients(@Param("ingredients") List<String> ingredients,
-                                          @Param("ingredientsCount") long ingredientsCount);
+                                          @Param("ingredientsCount") long ingredientsCount,
+                                          @Param("maxTime") int maxTime); // Added maxTime parameter
 
     @Query(value = "SELECT r.* " +
             "FROM recipe r " +
             "JOIN recipe_ingredient ri ON r.id = ri.recipe_id " +
             "JOIN ingredient i ON ri.ingredient_id = i.id " +
             "WHERE i.name IN :ingredients " +
+            "AND (r.prep_time_minutes + r.cook_time_minutes) <= :maxTime " + // Combined time condition
             "GROUP BY r.id " +
             "HAVING COUNT(DISTINCT i.name) = :ingredientsCount",
             nativeQuery = true)
     List<Recipe> findRecipesByIngredientsFlexible(@Param("ingredients") List<String> ingredients,
-                                                  @Param("ingredientsCount") long ingredientsCount);
+                                                  @Param("ingredientsCount") long ingredientsCount,
+                                                  @Param("maxTime") int maxTime); // Added maxTime parameter
 }
