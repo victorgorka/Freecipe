@@ -53,14 +53,19 @@ function SearchContainer({ onSearch }) {
     }
 
     const queryParams = ingredients
-    .map((ingredient) => `ingredients=${encodeURIComponent(ingredient)}`)
-    .join("&");
-const url =
-    `http://localhost:8080/recipes/byIngredients?${queryParams}` +
-    "&flexible=" +
-    isChecked +
-    "&maxTime=" +
-    rangeValue;
+      .map((ingredient) => `ingredients=${encodeURIComponent(ingredient)}`)
+      .join("&");
+
+    
+    const effectiveMaxTime = Number(rangeValue) === 0 ? 150 : rangeValue;
+    
+
+    const url =
+      `http://localhost:8080/recipes/byIngredients?${queryParams}` +
+      "&flexible=" +
+      isChecked +
+      "&maxTime=" +
+      effectiveMaxTime;
 
     onSearch(url);
 
@@ -81,7 +86,7 @@ const url =
 
   return (
     <div>
-      <Link to="/" className="text-decoration-none"><img src="src\assets\Web-12.png"  style={{ width: '50px', height: '50px' }}></img></Link>  
+      <Link to="/" className="text-decoration-none"><img src="src\assets\Web-12.png" style={{ width: '50px', height: '50px' }}></img></Link>
       <div className="search-container">
         <div className="search-filter">
           <form
@@ -105,7 +110,7 @@ const url =
                 <strong>Flexible</strong>
               </label>
             </div>
-               
+
             <Form.Label className="tiempo">
               Tiempo: {rangeValue} minutos
             </Form.Label>
@@ -116,8 +121,8 @@ const url =
               onChange={handleRangeChange}
             />
 
-           {/* Autocomplete Input for Ingredients */}
-           <div className="autocomplete-container">
+            {/* Autocomplete Input for Ingredients */}
+            <div className="autocomplete-container">
               <input
                 type="text"
                 value={ingredientInput}
@@ -138,7 +143,7 @@ const url =
                 </ul>
               )}
             </div>
-          </form>
+          </form>
 
           <div className="submitted-ingredients">
             {ingredients.map((ing, index) => (
