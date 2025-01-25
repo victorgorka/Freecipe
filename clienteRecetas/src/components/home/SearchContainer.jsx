@@ -79,9 +79,7 @@ function SearchContainer({ onSearch }) {
 
   return (
     <div>
-      <button to="/" className="link">
-        <img src="../../../../Design/Web-12.png"></img>
-      </button>
+      <Link to="/" className="text-decoration-none"><img src="src\assets\Web-12.png"  style={{ width: '50px', height: '50px' }}></img></Link>  
       <div className="search-container">
         <div className="search-filter">
           <form
@@ -105,15 +103,19 @@ function SearchContainer({ onSearch }) {
                 <strong>Flexible</strong>
               </label>
             </div>
-            <Form.Label>Tiempo: {rangeValue} minutos</Form.Label>
+               
+            <Form.Label className="tiempo">
+              Tiempo: {rangeValue} minutos
+            </Form.Label>
             <Form.Range
+              className="tiempo"
               max={120}
               value={rangeValue}
               onChange={handleRangeChange}
             />
 
-            {/* Autocomplete Input for Ingredients */}
-            <div className="autocomplete-container">
+           {/* Autocomplete Input for Ingredients */}
+           <div className="autocomplete-container">
               <input
                 type="text"
                 value={ingredientInput}
@@ -134,34 +136,7 @@ function SearchContainer({ onSearch }) {
                 </ul>
               )}
             </div>
-
-            <Form.Label className="tiempo">
-              Tiempo: {rangeValue} minutos
-            </Form.Label>
-            <Form.Range
-              className="tiempo"
-              max={120}
-              value={rangeValue}
-              onChange={handleRangeChange}
-            />
-
-            {/* Ingredient selection dropdown */}
-            <select
-              value={ingredientId}
-              onChange={handleIngredientChange}
-              className="custom-placeholder"
-            >
-              <option value="">Selecciona un ingrediente</option>
-              {availableIngredients.map((ing) => (
-                <option key={ing.id} value={ing.id}>
-                  {ing.name}
-                </option>
-              ))}
-            </select>
-            <button type="submit" disabled={!ingredientId}>
-              Añadir Ingrediente
-            </button>
-          </form>
+          </form>
 
           <div className="submitted-ingredients">
             {ingredients.map((ing, index) => (

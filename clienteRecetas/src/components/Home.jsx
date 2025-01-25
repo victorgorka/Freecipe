@@ -99,10 +99,6 @@ function Home() {
         <Col>
           <Navbar bg="none" expand="lg">
             <Navbar.Brand>
-              <Link to="/" className="text-decoration-none">
-                <FaHome size={24} className="me-2" /> {/* Home icon */}
-                <span>Home</span>
-              </Link>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
