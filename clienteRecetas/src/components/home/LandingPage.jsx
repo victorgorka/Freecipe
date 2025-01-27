@@ -84,8 +84,8 @@ const LandingPage = () => {
 
           <p>
             SOLO TE PEDIMOS QUE INTROUZCAS LOS INGREDIENTES DE TU NEVERA, EL
-            TIEMPO QUE TIENES PARA COCINAR, SI TENEMOS QUE TENER ALGÚN EN CUENTA
-            Y DEJAR QUE PAHKOMÉ! HAGA SU MAGIA
+            TIEMPO QUE TIENES PARA COCINAR, SI TENEMOS QUE TENER ALGO EXTRA EN
+            CUENTA Y DEJAR QUE PAHKOMÉ! HAGA SU MAGIA
           </p>
         </div>
       </section>

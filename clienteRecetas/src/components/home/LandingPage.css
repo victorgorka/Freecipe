@@ -80,12 +80,8 @@ p {
   font-size: x-large;
 }
 .explication2 {
-  display: flex;
   background-color: rgba(255, 255, 255, 0.8);
   border: 2px solid #bcaf75;
-}
-li {
-  justify-items: flex-end;
 }
 .line {
   margin-left: auto;
@@ -95,6 +91,9 @@ li {
   width: 40%;
   height: 1px;
   margin-top: 20px;
+}
+ul {
+  list-style-type: none;
 }
 
 /* Footer */
@@ -227,4 +226,15 @@ a:hover {
 
 .delay-35 {
   animation-delay: calc(7 * var(--delay-base));
+}
+
+.T1 {
+  display: inline;
+  font-weight: 200;
+  font-size: 70pt;
+}
+.T2 {
+  display: inline;
+  font-weight: bold;
+  font-size: 70pt;
 }
