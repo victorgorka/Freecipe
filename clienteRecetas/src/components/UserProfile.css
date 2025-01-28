@@ -30,6 +30,21 @@
 }
 
 .button-search-recipe {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	background-color: rgba(229, 207, 133, 0.9);
+	color: black;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 0.5rem;
+	cursor: pointer;
+}
+
+.logout-button {
+	position: absolute;
+	top: 20px;
+	right: 20px;
 	background-color: rgba(229, 207, 133, 0.9);
 	color: black;
 	border: 1px solid #ccc;

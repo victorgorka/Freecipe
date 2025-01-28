@@ -93,7 +93,7 @@ const UserProfile = () => {
         <div>
           <h1>Bienvenido, {userData.fullName}</h1>
           <p>Email: {userData.email}</p>
-          <button onClick={handleLogout}>Logout</button>
+          <button className="logout-button" onClick={handleLogout}>Logout</button>
 
           {/* Add Recipe Form */}
           <form className="new-recipe-form" onSubmit={handleAddRecipe}>
