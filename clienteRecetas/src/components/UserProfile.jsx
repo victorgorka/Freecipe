@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axiosInstance from "../config/axiosConfig";
 import { useNavigate, Link } from "react-router-dom";
+import "./UserProfile.css";
 
 const UserProfile = () => {
   const [userData, setUserData] = useState(null);
@@ -83,23 +84,22 @@ const UserProfile = () => {
     localStorage.removeItem("token");
     navigate("/login");
   };
-
   return (
     <div>
-      <button>
-        <Link to="/search">CONTINUAR</Link>
+      <button className="button-search-recipe">
+        <Link to="/search">BUSCAR RECETAS</Link>
       </button>
       {userData ? (
         <div>
-          <h1>Welcome, {userData.name}</h1>
+          <h1>Bienvenido, {userData.fullName}</h1>
           <p>Email: {userData.email}</p>
-          <button onClick={handleLogout}>Logout</button>
+          <button className="logout-button" onClick={handleLogout}>Logout</button>
 
           {/* Add Recipe Form */}
-          <h2>Add a New Recipe</h2>
-          <form onSubmit={handleAddRecipe}>
+          <form className="new-recipe-form" onSubmit={handleAddRecipe}>
+          <h2>Añadir Receta</h2>
             <div>
-              <label>Recipe Name:</label>
+              <label>Nombre de la receta:</label>
               <input
                 type="text"
                 value={recipeName}
@@ -108,7 +108,7 @@ const UserProfile = () => {
               />
             </div>
             <div>
-              <label>Ingredients (separate by commas):</label>
+              <label>Ingredientes (separados por comas):</label>
               <input
                 type="text"
                 value={ingredients}
@@ -117,7 +117,7 @@ const UserProfile = () => {
               />
             </div>
             <div>
-              <label>Instructions (separate by periods):</label>
+              <label>Instrucciones (separado por puntos):</label>
               <textarea
                 value={instructions}
                 onChange={(e) => setInstructions(e.target.value)}
@@ -125,17 +125,17 @@ const UserProfile = () => {
               />
             </div>
             <div>
-              <label>Image:</label>
+              <label>Imagen:</label>
               <input
                 type="file"
                 onChange={(e) => setImage(e.target.files[0])} // Handle file input
               />
             </div>
-            <button type="submit">Add Recipe</button>
+            <button type="submit">Añadir Receta</button>
           </form>
         </div>
       ) : (
-        <p>Loading...</p>
+        <p>Cargando...</p>
       )}
     </div>
   );
