@@ -25,7 +25,7 @@ public class Recipe {
 
     @ElementCollection
     @CollectionTable(name = "recipe_instructions", joinColumns = @JoinColumn(name = "recipe_id"))
-    @Column(name = "instruction")
+    @Column(name = "instruction",columnDefinition = "TEXT")
     private List<String> instructions;
 
     private int prepTimeMinutes;
