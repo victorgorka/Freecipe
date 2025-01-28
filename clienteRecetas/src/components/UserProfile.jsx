@@ -84,21 +84,20 @@ const UserProfile = () => {
     localStorage.removeItem("token");
     navigate("/login");
   };
-
   return (
     <div>
-      <button>
-        <Link to="/search">CONTINUAR</Link>
+      <button className="button-search-recipe">
+        <Link to="/search">BUSCAR RECETAS</Link>
       </button>
       {userData ? (
         <div>
-          <h1>Bienvenido, {userData.name}</h1>
+          <h1>Bienvenido, {userData.fullName}</h1>
           <p>Email: {userData.email}</p>
           <button onClick={handleLogout}>Logout</button>
 
           {/* Add Recipe Form */}
-          <h2>Añadir Receta</h2>
           <form className="new-recipe-form" onSubmit={handleAddRecipe}>
+          <h2>Añadir Receta</h2>
             <div>
               <label>Nombre de la receta:</label>
               <input

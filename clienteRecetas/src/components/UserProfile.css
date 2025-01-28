@@ -15,6 +15,8 @@
 	padding: 0.5rem;
 	border: 1px solid #ccc;
 	border-radius: 3px;
+	background-color: rgba(229, 207, 133, 0.9);
+	color: black;
 }
 
 .new-recipe-form button {
@@ -25,4 +27,13 @@
 
 .new-recipe-form button:hover {
 	background-color: #45a049;
+}
+
+.button-search-recipe {
+	background-color: rgba(229, 207, 133, 0.9);
+	color: black;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 0.5rem;
+	cursor: pointer;
 }
