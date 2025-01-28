@@ -1,0 +1,28 @@
+.new-recipe-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #f9f9f9;
+}
+
+.new-recipe-form input,
+.new-recipe-form textarea,
+.new-recipe-form button {
+	width: 100%;
+	padding: 0.5rem;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+.new-recipe-form button {
+	background-color: #4CAF50;
+	color: white;
+	cursor: pointer;
+}
+
+.new-recipe-form button:hover {
+	background-color: #45a049;
+}

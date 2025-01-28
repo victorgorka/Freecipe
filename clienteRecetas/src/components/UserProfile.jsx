@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axiosInstance from "../config/axiosConfig";
 import { useNavigate, Link } from "react-router-dom";
+import "./UserProfile.css";
 
 const UserProfile = () => {
   const [userData, setUserData] = useState(null);
@@ -97,7 +98,7 @@ const UserProfile = () => {
 
           {/* Add Recipe Form */}
           <h2>Add a New Recipe</h2>
-          <form onSubmit={handleAddRecipe}>
+          <form className="new-recipe-form" onSubmit={handleAddRecipe}>
             <div>
               <label>Recipe Name:</label>
               <input
