@@ -66,7 +66,10 @@ const LandingPage = () => {
           <span className="animate-hero hero__text--question hero__text--question-r delay-35">
             ?
           </span>
-          &nbsp;
+
+          <button className="continue-btn1">
+            <Link to="/search">YO TE LO MUESTRO</Link>
+          </button>
         </div>
       </section>
 

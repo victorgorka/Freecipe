@@ -5,6 +5,16 @@ body {
   background-repeat: repeat;
   font-family: "Montserrat", sans-serif;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -60,7 +70,7 @@ video {
 .Icon {
   width: 30px;
   height: 30px;
-  background-color: #fff; /* Fondo blanco sólido */
+  background-color: #fff;
   z-index: 2;
   border-radius: 8px;
 }
@@ -106,7 +116,6 @@ ul {
 
 .continue-btn {
   display: block;
-  width: 25%;
   background-color: #ffffff7f;
   color: rgb(88, 88, 88);
   text-align: center;
@@ -114,6 +123,29 @@ ul {
   cursor: pointer;
   border-radius: 15px;
   border: 2px solid rgb(88, 88, 88);
+}
+.continue-btn1 {
+  display: block;
+  background-color: #bcaf75b8;
+  color: rgb(88, 88, 88);
+  text-align: center;
+  border-radius: none;
+  cursor: pointer;
+  border-radius: 15px;
+  border: 2px solid #bcaf75;
+  grid-area: footer;
+  justify-self: center;
+  padding: 0.5em 1em;
+  line-height: 0.1;
+  animation: fadeIn 2.5s ease-in-out;
+}
+.continue-btn1 a {
+  color: #fff;
+  text-decoration: none;
+}
+.continue-btn1 a:hover {
+  color: #fff;
+  text-decoration: none;
 }
 a {
   color: rgb(88, 88, 88);
@@ -131,6 +163,10 @@ a:hover {
   background-color: #ffffff;
   border-color: black;
 }
+.continue-btn1:hover {
+  background-color: #bcaf75;
+  border-color: white;
+}
 
 /* HERO */
 .hero__text {
@@ -145,10 +181,11 @@ a:hover {
   text-transform: uppercase;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr auto;
   grid-template-areas:
     "left top right"
-    "left bottom right";
+    "left bottom right"
+    "footer footer footer";
 }
 
 .hero__text--question {
