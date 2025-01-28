@@ -6,7 +6,7 @@ import RecipeCard from "./RecipeCard";
 function SearchResults({ results }) {
 	console.log("Received results:", results);
   return (
-    <div>
+    <div className="search-results-container">
       <Container>
         <Row>
           {results.map((result) => (

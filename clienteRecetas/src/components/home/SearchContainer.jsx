@@ -46,14 +46,26 @@ function SearchContainer({ onSearch }) {
 
   const fetchRecipesByIngredients = () => {
     if (ingredients.length === 0) {
-      console.log("No ingredients selected. Please select some ingredients before searching.");
+      console.log(
+        "No ingredients selected. Please select some ingredients before searching."
+      );
       return; // Exit the function if no ingredients are selected
     }
 
     const queryParams = ingredients
       .map((ingredient) => `ingredients=${encodeURIComponent(ingredient)}`)
       .join("&");
-    const url = `http://localhost:8080/recipes/byIngredients?${queryParams}` + "&flexible=" + isChecked;
+
+    
+    const effectiveMaxTime = Number(rangeValue) === 0 ? 150 : rangeValue;
+    
+
+    const url =
+      `http://localhost:8080/recipes/byIngredients?${queryParams}` +
+      "&flexible=" +
+      isChecked +
+      "&maxTime=" +
+      effectiveMaxTime;
 
     onSearch(url);
 
@@ -74,6 +86,7 @@ function SearchContainer({ onSearch }) {
 
   return (
     <div>
+      <Link to="/" className="text-decoration-none"><img src="src\assets\Web-12.png" style={{ width: '50px', height: '50px' }}></img></Link>
       <div className="search-container">
         <div className="search-filter">
           <form
@@ -97,8 +110,16 @@ function SearchContainer({ onSearch }) {
                 <strong>Flexible</strong>
               </label>
             </div>
-            <Form.Label>Tiempo: {rangeValue} minutos</Form.Label>
-            <Form.Range max={120} value={rangeValue} onChange={handleRangeChange} />
+
+            <Form.Label className="tiempo">
+              Tiempo: {rangeValue} minutos
+            </Form.Label>
+            <Form.Range
+              className="tiempo"
+              max={120}
+              value={rangeValue}
+              onChange={handleRangeChange}
+            />
 
             {/* Autocomplete Input for Ingredients */}
             <div className="autocomplete-container">
@@ -134,7 +155,7 @@ function SearchContainer({ onSearch }) {
           </div>
 
           <br />
-          <button type="button" onClick={fetchRecipesByIngredients}>
+          <button onClick={fetchRecipesByIngredients} className="botonR">
             Recomendar
           </button>
         </div>
