@@ -6,8 +6,16 @@ import com.example.servidorRecetas.repository.IngredientRepository;
 import com.example.servidorRecetas.repository.RecipeRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.List;
 import java.util.Optional;
 
@@ -28,9 +36,12 @@ public class CrudReceta {
         return recipeRepository.findById(id);
     }
 
-    @Transactional
-    public Recipe createRecipe(Recipe recipe) {
+    @Value("${file.upload-dir}")
+    private String uploadDir;
 
+    @Transactional
+    public Recipe createRecipe(Recipe recipe, MultipartFile file) {
+        // Process ingredients
         for (int i = 0; i < recipe.getIngredients().size(); i++) {
             Ingredient ingredient = recipe.getIngredients().get(i);
 
@@ -46,8 +57,39 @@ public class CrudReceta {
             }
         }
 
+        // Handle image upload
+        if (file != null && !file.isEmpty()) {
+            // Normalize the file name to prevent security issues
+            String fileName = StringUtils.cleanPath(file.getOriginalFilename());
+
+            try {
+                // Ensure the upload directory exists, create it if it doesn't
+                Path uploadPath = Paths.get(uploadDir);
+                if (!Files.exists(uploadPath)) {
+                    Files.createDirectories(uploadPath);
+                }
+
+                // Define the path where the file will be saved
+                Path path = uploadPath.resolve(fileName);
+                Files.copy(file.getInputStream(), path);
+
+                // Generate the URL to access the image
+                String fileDownloadUri = ServletUriComponentsBuilder.fromCurrentContextPath()
+                        .path("/uploads/")
+                        .path(fileName)
+                        .toUriString();
+
+                // Set the image URL in the recipe
+                recipe.setImage(fileDownloadUri);
+            } catch (IOException e) {
+                throw new RuntimeException("Failed to upload image", e);
+            }
+        }
+
+        // Save the recipe in the database
         return recipeRepository.save(recipe);
     }
+
 
     public Recipe updateRecipe(int id, Recipe updatedRecipe) {
         if (recipeRepository.existsById((long) id)) {

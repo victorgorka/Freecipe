@@ -1,6 +1,8 @@
 package com.example.servidorRecetas.model;
 
 import jakarta.persistence.*;
+import org.springframework.boot.autoconfigure.web.WebProperties;
+
 import java.util.List;
 import java.util.List;
 
@@ -8,11 +10,12 @@ import java.util.List;
 public class Recipe {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     private String name;
 
-    @ManyToMany(cascade = CascadeType.PERSIST)
+    @ManyToMany(cascade = CascadeType.MERGE)
     @JoinTable(
             name = "recipe_ingredient",
             joinColumns = @JoinColumn(name = "recipe_id"),
@@ -22,7 +25,7 @@ public class Recipe {
 
     @ElementCollection
     @CollectionTable(name = "recipe_instructions", joinColumns = @JoinColumn(name = "recipe_id"))
-    @Column(name = "instruction")
+    @Column(name = "instruction",columnDefinition = "TEXT")
     private List<String> instructions;
 
     private int prepTimeMinutes;

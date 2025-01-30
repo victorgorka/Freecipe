@@ -1,28 +1,86 @@
-.ModalHeader{
-    padding: 0px !important;
+.recipe-detail {
+  .ModalFooter {
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
   }
-  
-  .ModalFooter{
-    background-color: black !important;
-    opacity: 0.8 !important; 
-    
+  .modal-content {
+    background-color: transparent;
   }
-  .imagen {
-    width: 100%; 
-    height: auto; 
-    display: block; 
-    margin: 0 auto;
+}
+
+.transp {
+  background-color: aquamarine;
+  z-index: 10;
+}
+
+.recipe-detail__details {
+  color: white;
+  display: flex;
+  gap: 15px;
+}
+
+.recipe-detail__ingredients {
+  border-right: 1px solid white;
+  font-size: 0.85rem;
+  padding-right: 15px;
+  text-align: right;
+}
+
+.recipe-detail__instructions {
+  font-size: 0.85rem;
+}
+
+.imagen {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+}
+
+.Color {
+  width: 100%;
+  height: auto;
+  background-color: #bcaf756f;
+}
+
+.ImagenModal {
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.titulo {
+  display: block;
+  align-items: center;
+  color: #a8975e;
+  text-transform: uppercase !important;
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-decoration-line: underline;
+}
+
+.btnCerrar {
+  position: absolute;
+  right: 10px;
+}
+
+.btn {
+  background-color: #bcaf75;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #a8975e;
+}
+
+ul.recipe-detail__list {
+  list-style: none;
+  padding: 0;
+}
+
+@media (min-width: 576px) {
+  .recipe-detail {
+    .modal-dialog {
+      max-width: 80%;
+    }
   }
-  
-  div{
-    display: inline;
-    color: black;
-  }
-  
-  .titulo{
-    display: block;
-    color: #a8975e;
-    text-transform: uppercase; 
-    text-decoration: underline; 
-    text-decoration-color: white; 
-  }
+}

@@ -3,9 +3,9 @@ import { Form } from "react-bootstrap";
 import "./SearchContainer.css";
 import { Link } from "react-router-dom";
 
-function SearchContainer({onSearch}) {
+function SearchContainer({ onSearch }) {
   const [rangeValue, setRangeValue] = useState(0);
-  const [ingredientId, setIngredientId] = useState(""); // Store the selected ingredient's id
+  const [ingredientInput, setIngredientInput] = useState(""); // To store the typed input
   const [ingredients, setIngredients] = useState([]); // List of added ingredients
   const [availableIngredients, setAvailableIngredients] = useState([]); // List of available ingredients from the server
   const [isChecked, setIsChecked] = useState(false);
@@ -28,21 +28,14 @@ function SearchContainer({onSearch}) {
     setRangeValue(event.target.value);
   };
 
-  const handleIngredientChange = (event) => {
-    setIngredientId(event.target.value); // Set the selected ingredient id
+  const handleInputChange = (event) => {
+    setIngredientInput(event.target.value);
   };
 
-  const handleAddIngredient = (event) => {
-    event.preventDefault();
-    if (ingredientId && availableIngredients.length > 0) {
-      // Find the ingredient name based on the selected id
-      const selectedIngredient = availableIngredients.find(
-        (ing) => ing.id.toString() === ingredientId
-      );
-      if (selectedIngredient) {
-        setIngredients([...ingredients, selectedIngredient.name]);
-        setIngredientId(""); // Reset the selected ingredient
-      }
+  const handleAddIngredient = (ingredientName) => {
+    if (ingredientName) {
+      setIngredients([...ingredients, ingredientName]);
+      setIngredientInput(""); // Clear the input field
     }
   };
 
@@ -51,41 +44,60 @@ function SearchContainer({onSearch}) {
     setIngredients(newIngredients);
   };
 
-  // Function to fetch recipes by ingredients
   const fetchRecipesByIngredients = () => {
-    // Construct the query string with separate ingredients
+    if (ingredients.length === 0) {
+      console.log(
+        "No ingredients selected. Please select some ingredients before searching."
+      );
+      return; // Exit the function if no ingredients are selected
+    }
+
     const queryParams = ingredients
       .map((ingredient) => `ingredients=${encodeURIComponent(ingredient)}`)
       .join("&");
 
-    // Construct the URL for the API call
-    const url = `http://localhost:8080/recipes/byIngredients?${queryParams}`+'&flexible='+isChecked;
+    
+    const effectiveMaxTime = Number(rangeValue) === 0 ? 150 : rangeValue;
+    
+
+    const url =
+      `http://localhost:8080/recipes/byIngredients?${queryParams}` +
+      "&flexible=" +
+      isChecked +
+      "&maxTime=" +
+      effectiveMaxTime;
 
     onSearch(url);
 
-    // Call the endpoint
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        console.log(url)
+        console.log(url);
         console.log("Recipes:", data);
-        
       })
       .catch((error) => {
-        console.log(url)
         console.error("Error fetching recipes:", error);
       });
   };
 
+  const filteredIngredients = availableIngredients.filter((ing) =>
+    ing.name.toLowerCase().includes(ingredientInput.toLowerCase())
+  );
+
   return (
     <div>
-      <button>
-        <Link to="/">HOME</Link>
-      </button>
+      <Link to="/" className="text-decoration-none"><img src="src\assets\Web-12.png" style={{ width: '50px', height: '50px' }}></img></Link>
       <div className="search-container">
-        
         <div className="search-filter">
-          <form onSubmit={handleAddIngredient}>
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              const selectedIngredient = filteredIngredients[0];
+              if (selectedIngredient) {
+                handleAddIngredient(selectedIngredient.name);
+              }
+            }}
+          >
             <div className="checkbox-container">
               <input
                 type="checkbox"
@@ -98,53 +110,39 @@ function SearchContainer({onSearch}) {
                 <strong>Flexible</strong>
               </label>
             </div>
-            <div className="checkbox-container">
-              <input type="checkbox" id="vegan" name="vegan" value="vegan" />
-              <label htmlFor="vegan">
-                Op. <strong>Vegana</strong>
-              </label>
-            </div>
-            <div className="checkbox-container">
-              <input
-                type="checkbox"
-                id="celiaca"
-                name="celiaca"
-                value="celiaca"
-              />
-              <label htmlFor="celiaca">
-                Op. <strong>Celiaca</strong>
-              </label>
-            </div>
-            <div className="checkbox-container">
-              <input type="checkbox" id="sal" name="sal" value="sal" />
-              <label htmlFor="sal">
-                Op. <strong>Sin Sal</strong>
-              </label>
-            </div>
 
-            <Form.Label>Tiempo: {rangeValue} minutos</Form.Label>
+            <Form.Label className="tiempo">
+              Tiempo: {rangeValue} minutos
+            </Form.Label>
             <Form.Range
+              className="tiempo"
               max={120}
               value={rangeValue}
               onChange={handleRangeChange}
             />
 
-            {/* Ingredient selection dropdown */}
-            <select
-              value={ingredientId}
-              onChange={handleIngredientChange}
-              className="custom-placeholder"
-            >
-              <option value="">Selecciona un ingrediente</option>
-              {availableIngredients.map((ing) => (
-                <option key={ing.id} value={ing.id}>
-                  {ing.name}
-                </option>
-              ))}
-            </select>
-            <button type="submit" disabled={!ingredientId}>
-              Añadir Ingrediente
-            </button>
+            {/* Autocomplete Input for Ingredients */}
+            <div className="autocomplete-container">
+              <input
+                type="text"
+                value={ingredientInput}
+                onChange={handleInputChange}
+                placeholder="Selecciona un ingrediente"
+              />
+              {ingredientInput && (
+                <ul className="autocomplete-list">
+                  {filteredIngredients.map((ing) => (
+                    <li
+                      key={ing.id}
+                      onClick={() => handleAddIngredient(ing.name)}
+                      className="autocomplete-item"
+                    >
+                      {ing.name}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
           </form>
 
           <div className="submitted-ingredients">
@@ -157,7 +155,7 @@ function SearchContainer({onSearch}) {
           </div>
 
           <br />
-          <button type="button" onClick={fetchRecipesByIngredients}>
+          <button onClick={fetchRecipesByIngredients} className="botonR">
             Recomendar
           </button>
         </div>

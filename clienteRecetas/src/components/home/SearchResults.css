@@ -1,0 +1,16 @@
+.col{
+    display: flex;
+}
+
+/* Container for the search results with a background image */
+.search-results-container {
+    background-image: url('../../assets/SRbg.jpg');
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    padding: 20px; /* Add some padding */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    position: relative; /* Ensure the container is positioned correctly */
+    min-width: 110%;
+  }
+
